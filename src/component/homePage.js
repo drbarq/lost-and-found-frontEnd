@@ -48,7 +48,7 @@ export default class HomePage extends Component {
                         </div>
                         <div className="item">
                             <div className="itemNameContainer">
-                                <label htmlFor="itemName">item</label>
+                                <label htmlFor="itemName">item name</label>
                                 <h5 className="itemName">Water Bottle</h5>
                             </div>
                             <div className="commPrefContainer">
@@ -68,7 +68,78 @@ export default class HomePage extends Component {
                             <div className="editItem">
                                 <button className="editItemButton">edit</button>
                             </div>
+                        </div>
 
+                        <div className="item">
+                            <div className="itemNameContainer">
+                                <label htmlFor="itemName">item name</label>
+                                <h5 className="itemName">Drivers License</h5>
+                            </div>
+                            <div className="commPrefContainer">
+                                <div className="phoneCheckBox">
+                                    <label htmlFor="phoneCheck">phone</label>
+                                    <input className="phoneCheck" type="checkbox"></input>
+                                </div>
+                                <div className="textCheckBox">
+                                    <label htmlFor="textCheck">text</label>
+                                    <input className="textCheck" type="checkbox"></input>
+                                </div>
+                                <div className="emailCheckBox">
+                                    <label htmlFor="emailCheck">email</label>
+                                    <input className="emailCheck" type="checkbox"></input>
+                                </div>
+                            </div>
+                            <div className="editItem">
+                                <button className="editItemButton">edit</button>
+                            </div>
+                        </div>
+
+                        <div className="item">
+                            <div className="itemNameContainer">
+                                <label htmlFor="itemName">item name</label>
+                                <h5 className="itemName">Cell Phone</h5>
+                            </div>
+                            <div className="commPrefContainer">
+                                <div className="phoneCheckBox">
+                                    <label htmlFor="phoneCheck">phone</label>
+                                    <input className="phoneCheck" type="checkbox"></input>
+                                </div>
+                                <div className="textCheckBox">
+                                    <label htmlFor="textCheck">text</label>
+                                    <input className="textCheck" type="checkbox"></input>
+                                </div>
+                                <div className="emailCheckBox">
+                                    <label htmlFor="emailCheck">email</label>
+                                    <input className="emailCheck" type="checkbox"></input>
+                                </div>
+                            </div>
+                            <div className="editItem">
+                                <button className="editItemButton">edit</button>
+                            </div>
+                        </div>
+
+                        <div className="item">
+                            <div className="itemNameContainer">
+                                <label htmlFor="itemName">item name</label>
+                                <h5 className="itemName">Cat</h5>
+                            </div>
+                            <div className="commPrefContainer">
+                                <div className="phoneCheckBox">
+                                    <label htmlFor="phoneCheck">phone</label>
+                                    <input className="phoneCheck" type="checkbox"></input>
+                                </div>
+                                <div className="textCheckBox">
+                                    <label htmlFor="textCheck">text</label>
+                                    <input className="textCheck" type="checkbox"></input>
+                                </div>
+                                <div className="emailCheckBox">
+                                    <label htmlFor="emailCheck">email</label>
+                                    <input className="emailCheck" type="checkbox"></input>
+                                </div>
+                            </div>
+                            <div className="editItem">
+                                <button className="editItemButton">edit</button>
+                            </div>
                         </div>
 
 
