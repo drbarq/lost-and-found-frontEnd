@@ -3,6 +3,8 @@ import Login from './component/login'
 import NewUser from './component/newUser'
 import HomePage from './component/homePage'
 import NewItem from './component/newItem'
+import EditItem from './component/editItem'
+import EditUser from './component/editUser'
 import 'font-awesome/css/font-awesome.min.css'
 // import react router 
 
@@ -16,7 +18,9 @@ export default function App() {
       {/* <Login /> */}
       {/* <NewUser /> */}
       {/* <HomePage /> */}
-      <NewItem />
+      {/* <NewItem /> */}
+      {/* <EditItem /> */}
+      <EditUser />
       </React.Fragment>
     // </Router>
 

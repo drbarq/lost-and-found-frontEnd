@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+}
+
+.logo {
+    height: 100px;
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: 2rem;
+}
+
+body {
+    display: flex;
+}
+
+.app {
+    border: 1px solid black;
+    height:700px;
+    width:700px;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+}
+
+.editUser {
+    margin-top: -15rem;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px dashed black; */
+    width: 85%;
+}
+
+.editUserTitleContainer {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+    justify-content: space-between; 
+    padding: 0.2rem 0.2rem;
+    align-items: flex-end;
+}
+
+.editUserInfoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 0.2rem 0.2rem;
+    margin-top: .5rem;
+    align-items: flex-start;
+}
+
+.editUserContainerRowTwo {
+    display: flex;
+    flex-direction: row;
+    margin-top: .5rem;
+    /* align-items: flex-end; */
+    justify-content: space-between;
+    /* padding: 0.2rem 0.2rem; */
+    width: 100%;
+}
+
+.editUserCommOptionContainer {
+    flex-grow: 1;
+}
+
+
