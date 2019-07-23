@@ -11,12 +11,11 @@ export default class EditItem extends Component {
     render() {
         return(
             <React.Fragment>
-
+{/* 
             <header>
                 <img className="logo" src="https://i.imgur.com/i6sybqa.png"></img>
-            </header>
+            </header> */}
             
-            <body>
                 <div className="app">
                     <div className="editItem">
                         <div className="editItemTitleContainer">
@@ -66,7 +65,7 @@ export default class EditItem extends Component {
                         </form>
                     </div>
                 </div>
-            </body>
+
 
             </React.Fragment>
             

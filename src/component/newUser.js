@@ -12,11 +12,11 @@ export default class NewUser extends Component {
         return(
             <React.Fragment>
 
-            <header>
+            {/* <header>
                 <img className="logo" src="https://i.imgur.com/i6sybqa.png"></img>
-            </header>
+            </header> */}
             
-            <body>
+
                 <div className="app">
                     <div className="newUserForm ">
                         <form action="" method="post">
@@ -49,7 +49,6 @@ export default class NewUser extends Component {
                         </form>
                     </div>
                 </div>
-            </body>
 
             </React.Fragment>
             

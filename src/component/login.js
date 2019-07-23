@@ -12,11 +12,10 @@ export default class Login extends Component {
         return(
             <React.Fragment>
 
-            <header>
+            {/* <header>
                 <img className="logo" src="https://i.imgur.com/i6sybqa.png"></img>
-            </header>
+            </header> */}
             
-            <body>
                 <div className="app">
                     <div className="loginForm">
                         <form action="" method="post">
@@ -32,7 +31,6 @@ export default class Login extends Component {
                         </form>
                     </div>
                 </div>
-            </body>
 
             </React.Fragment>
             

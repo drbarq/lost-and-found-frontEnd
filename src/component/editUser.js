@@ -12,12 +12,7 @@ export default class EditUser extends Component {
         return(
             <React.Fragment>
 
-            <header>
-                <img className="logo" src="https://i.imgur.com/i6sybqa.png"></img>
-            </header>
-            
-            <body>
-                <div className="app">
+
                     <div className="editUser">
                         <div className="editUserTitleContainer">
                             <p>edit account information</p>
@@ -52,8 +47,6 @@ export default class EditUser extends Component {
 
                         </form>
                     </div>
-                </div>
-            </body>
 
             </React.Fragment>
             

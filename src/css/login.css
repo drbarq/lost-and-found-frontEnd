@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box;
-}
+
 
 header {
     display: flex;
@@ -22,9 +18,7 @@ header {
 body {
     /* height: 1200px; */
     display: flex;
-    justify-content: center;
 
-    /* align-items: center; */
 }
 
 .app {
@@ -34,7 +28,7 @@ body {
     margin-top: 3rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .loginForm{
@@ -48,8 +42,8 @@ body {
 }
 
 label, input {
-    display: block;
-    padding: 0.2rem 0.2rem;
+    /* display: block; */
+    /* padding: 0.2rem 0.2rem; */
     /* border-collapse: collapse; */
 }
 

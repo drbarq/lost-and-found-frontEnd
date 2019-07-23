@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box;
+    /* margin: 0; */
+    /* padding: 0;  */
+    /* box-sizing: border-box; */
 }
 
 header {
@@ -17,10 +17,6 @@ header {
     margin-left: 2rem;
 }
 
-.qrcode {
-    height: 80px;
-}
-
 body {
     display: flex;
 }
@@ -31,15 +27,15 @@ body {
     width:700px;
     margin-top: 3rem;
     display: flex;
-    /* flex-direction: column; */
-    /* justify-content: space-evenly; */
+    flex-direction: column;
 }
 
 .editItem {
-    margin-top: -12rem;
     display: flex;
     flex-direction: column;
     /* border: 1px dashed black; */
+    position: relative;
+    margin-top: -10rem;
     width: 85%;
 }
 
@@ -50,7 +46,15 @@ body {
     justify-content: space-between; 
     padding: 0.2rem 0.2rem;
     align-items: flex-end;
-    width: 85%;
+}
+
+.editItemInfoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 0.2rem 0.2rem;
+    margin-top: .5rem;
+    align-items: flex-start;
 }
 
 .editItemContainerRowOne {
@@ -59,15 +63,11 @@ body {
     align-items: flex-end;
     justify-content: space-between;
     padding: 0.2rem 0.2rem;
+    width: 100%;
 }
 
-.editItemInfoContainer {
-    /* padding: 0.2rem 0.2rem; */
-    /* border: 1px dashed black; */
-    display: flex;
-    flex-direction: column;
-    margin-top: .5rem;
-    width: 85%;
+.qrcode {
+    height: 80px;
 }
 
 .editCommsContainer{
@@ -75,6 +75,7 @@ body {
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
+    width: 100%;
 }
 
 .editTitleContainer {

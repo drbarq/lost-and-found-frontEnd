@@ -11,12 +11,11 @@ export default class NewItems extends Component {
     render() {
         return(
             <React.Fragment>
-
+{/* 
             <header>
                 <img className="logo" src="https://i.imgur.com/i6sybqa.png"></img>
-            </header>
+            </header> */}
             
-            <body>
                 <div className="app">
                     <div className="newItem">
                         <div className="newItemTitleContainer">
@@ -62,7 +61,7 @@ export default class NewItems extends Component {
                         </form>
                     </div>
                 </div>
-            </body>
+
 
             </React.Fragment>
             

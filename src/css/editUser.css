@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box;
-}
+
 
 header {
     display: flex;
@@ -28,14 +24,14 @@ body {
     margin-top: 3rem;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
 }
 
 .editUser {
-    margin-top: -15rem;
     display: flex;
     flex-direction: column;
     /* border: 1px dashed black; */
+    position: relative;
+    margin-top: -10rem;
     width: 85%;
 }
 
@@ -61,9 +57,8 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: .5rem;
-    /* align-items: flex-end; */
+    align-items: flex-end;
     justify-content: space-between;
-    /* padding: 0.2rem 0.2rem; */
     width: 100%;
 }
 

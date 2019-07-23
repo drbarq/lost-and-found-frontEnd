@@ -11,19 +11,17 @@ export default class HomePage extends Component {
     render() {
         return(
             <React.Fragment>
+                <div className="logoOne">
+                    <img src="https://i.imgur.com/i6sybqa.png"></img>
+                </div>
 
-            <header>
-                <img className="logo" src="https://i.imgur.com/i6sybqa.png"></img>
-            </header>
-            
-            <body>
-                <div className="app">
+                <div className="homePageContainer">
                     <div className="accountInfo">
-                        <div className="title">
+                        <div className="accountInfoTitle">
                             <p>account information</p>
                             <button>edit user</button>
                         </div>
-                        <div className="userInfo">
+                        {/* <div className="userInfo">
                             <div className="nameInfo">
                                 <label htmlFor="name">name</label>
                                 <h5 className="name"> Joe Tustin </h5>
@@ -38,15 +36,15 @@ export default class HomePage extends Component {
                                     <h5 className="phone">(720) 487-3045</h5>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
-                    <div className="trackedItems">
-                        <div className="title">
+                    {/* <div className="trackedItems">
+                        <div className="homePageTitle">
                             <p>tracked items</p>
                             <button>add new item</button>
                         </div>
-                        <div className="item">
+                        <div className="trackedItem">
                             <div className="itemNameContainer">
                                 <label htmlFor="itemName">item name</label>
                                 <h5 className="itemName">Water Bottle</h5>
@@ -65,12 +63,12 @@ export default class HomePage extends Component {
                                     <input className="emailCheck" type="checkbox"></input>
                                 </div>
                             </div>
-                            <div className="editItem">
+                            <div className="editItemButtonContainer">
                                 <button className="editItemButton">edit</button>
                             </div>
                         </div>
 
-                        <div className="item">
+                        <div className="trackedItem">
                             <div className="itemNameContainer">
                                 <label htmlFor="itemName">item name</label>
                                 <h5 className="itemName">Drivers License</h5>
@@ -89,12 +87,12 @@ export default class HomePage extends Component {
                                     <input className="emailCheck" type="checkbox"></input>
                                 </div>
                             </div>
-                            <div className="editItem">
+                            <div className="editItemButtonContainer">
                                 <button className="editItemButton">edit</button>
                             </div>
                         </div>
 
-                        <div className="item">
+                        <div className="trackedItem">
                             <div className="itemNameContainer">
                                 <label htmlFor="itemName">item name</label>
                                 <h5 className="itemName">Cell Phone</h5>
@@ -113,12 +111,12 @@ export default class HomePage extends Component {
                                     <input className="emailCheck" type="checkbox"></input>
                                 </div>
                             </div>
-                            <div className="editItem">
+                            <div className="editItemButtonContainer">
                                 <button className="editItemButton">edit</button>
                             </div>
                         </div>
 
-                        <div className="item">
+                        <div className="trackedItem">
                             <div className="itemNameContainer">
                                 <label htmlFor="itemName">item name</label>
                                 <h5 className="itemName">Cat</h5>
@@ -137,16 +135,14 @@ export default class HomePage extends Component {
                                     <input className="emailCheck" type="checkbox"></input>
                                 </div>
                             </div>
-                            <div className="editItem">
+                            <div className="editItemButtonContainer">
                                 <button className="editItemButton">edit</button>
                             </div>
                         </div>
+                    </div> */}
 
 
-                    </div>
                 </div>
-            </body>
-
             </React.Fragment>
             
         )

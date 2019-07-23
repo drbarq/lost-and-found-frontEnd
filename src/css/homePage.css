@@ -1,137 +1,38 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap'); */
 
-* {
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box;
-}
-
-header {
-    display: flex;
-}
-
-.logo {
-    height: 100px;
-    position: absolute;
-    margin-top: 5rem;
-    margin-left: 2rem;
-}
-
-body {
-    display: flex;
-    /* justify-content: center; */
-    /* position: relative; */
-}
-
-.app {
-    border: 1px solid black;
-    height:700px;
-    width:700px;
-    margin-top: 3rem;
+.homePageContainer {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
-    /* justify-content: flex-start; */
+    border: 1px dashed black;
+    margin-top: 20px;
+    width: 85%;
+}
 
-    /* align-content: center; */
-    /* align-items: center; */
-    /* position: relative; */
-    /* margin-bottom: 4%; */
+.homePageContainer label {
+    font-size: 12px;
+    color: #757575
 }
 
 .accountInfo {
-    width: 85%;
-    /* border: 1px dashed black; */
-    margin-bottom: 3rem;
-    /* height: 400px; */
+    /* margin-bottom: 2rem; */
+    display: flex;
+    flex-direction: column;
+    
 }
 
-.title {
+.accountInfoTitle p {
+    margin: 0;
+    padding: 0;
+    font-size: 12;
+}
+
+.accountInfoTitle {
     border-bottom: 1px solid black;
+    width: 100%;
+    /* height: 20px; */
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    padding: 0.2rem 0.2rem;
     align-items: flex-end;
-    padding: 0.2rem 0.2rem;
-}
-
-.userInfo {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    height: 100px; 
-    padding: 0.2rem 0.2rem;
 }
-
-.contact {
-    display: flex;
-    flex-direction: row;
-}
-
-.email {
-    margin-right: 3rem;
-}
-
-.trackedItems {
-    width: 85%;
-    /* border: 1px dashed black; */
-    /* margin-bottom: 60%; */
-    padding: 0.2rem 0.2rem;
-}
-
-.item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0.2rem 0.2rem;
-}
-
-.itemNameContainer {
-    /* flex-grow: 1; */
-    width: 33%;
-}
-
-.commPrefContainer {
-    display: flex;
-    flex-direction: row;
-    /* flex-grow: 1; */
-    width: 33%;
-    justify-content: center;
-    /* align-content: center; */
-    /* align-items: center; */
-    /* align-self: center; */
-}
-
-.phoneCheckBox {
-    display: flex;
-    flex-direction: column;
-}
-
-.textCheckBox {
-    display: flex;
-    flex-direction: column;
-}
-
-.emailCheckBox {
-    display: flex;
-    flex-direction: column;
-}
-
-
-.editItem {
-    display: flex;
-    flex-direction: row;
-    /* flex-grow: 1; */
-    width: 33%;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-
-p {
-    font-size: 12px;
-    color:black;
-}
-
-
-
-
