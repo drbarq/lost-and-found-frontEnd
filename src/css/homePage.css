@@ -77,6 +77,25 @@ body {
     /* margin-bottom: 60%; */
 }
 
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.itemNameContainer {
+    flex-grow: 1;
+}
+
+.commPrefContainer {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    /* align-content: center; */
+    /* align-items: center; */
+
+}
+
 
 p {
     font-size: 12px;

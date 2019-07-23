@@ -60,7 +60,13 @@ export default class HomePage extends Component {
                                     <label htmlFor="textCheck">text</label>
                                     <input className="textCheck" type="checkbox"></input>
                                 </div>
-
+                                <div className="emailCheckBox">
+                                    <label htmlFor="emailCheck">email</label>
+                                    <input className="emailCheck" type="checkbox"></input>
+                                </div>
+                            </div>
+                            <div className="editItem">
+                                <button className="editItemButton">edit</button>
                             </div>
 
                         </div>
