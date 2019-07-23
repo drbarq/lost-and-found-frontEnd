@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+}
+
+.logo {
+    height: 100px;
+    position: absolute;
+    margin-top: 4rem;
+    margin-left: 1rem;
+    /* top: 70px;
+    left: 80px; */
+}
+
+body {
+    /* height: 1200px; */
+    display: flex;
+    justify-content: center;
+
+    /* align-items: center; */
+}
+
+.app {
+    border: 1px solid black;
+    height:400px;
+    width:700px;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm{
+    /* border: 1px solid black; */
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+
+}
+
+label, input {
+    display: block;
+    padding: 0.2rem 0.2rem;
+    /* border-collapse: collapse; */
+}
+
+label {
+    font-size: 12px;
+    color: #757575
+}
+
+button {
+    margin-top: 0.6rem;
+    align-self: center;
+    justify-content: center; 
+}
+
+
+
+
+
+

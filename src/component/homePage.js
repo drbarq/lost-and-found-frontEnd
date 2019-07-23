@@ -1,0 +1,77 @@
+import React, { Component} from 'react'
+import '../css/homePage.css'
+
+
+export default class HomePage extends Component {
+    constructor() {
+        super()
+        this.state = {}
+    }
+
+    render() {
+        return(
+            <React.Fragment>
+
+            <header>
+                <img className="logo" src="https://i.imgur.com/i6sybqa.png"></img>
+            </header>
+            
+            <body>
+                <div className="app">
+                    <div className="accountInfo">
+                        <div className="title">
+                            <p>account information</p>
+                            <button>edit user</button>
+                        </div>
+                        <div className="userInfo">
+                            <div className="nameInfo">
+                                <label htmlFor="name">name</label>
+                                <h5 className="name"> Joe Tustin </h5>
+                            </div>
+                            <div className="contact">
+                                <div className="email">
+                                    <label htmlFor="email">email</label>
+                                    <h5 className="email">J.Tustin@gmail.com</h5>
+                                </div>
+                                <div className="phone">
+                                    <label htmlFor="phone">phone</label>
+                                    <h5 className="phone">(720) 487-3045</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="trackedItems">
+                        <div className="title">
+                            <p>tracked items</p>
+                            <button>add new item</button>
+                        </div>
+                        <div className="item">
+                            <div className="itemNameContainer">
+                                <label htmlFor="itemName">item</label>
+                                <h5 className="itemName">Water Bottle</h5>
+                            </div>
+                            <div className="commPrefContainer">
+                                <div className="phoneCheckBox">
+                                    <label htmlFor="phoneCheck">phone</label>
+                                    <input className="phoneCheck" type="checkbox"></input>
+                                </div>
+                                <div className="textCheckBox">
+                                    <label htmlFor="textCheck">text</label>
+                                    <input className="textCheck" type="checkbox"></input>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </body>
+
+            </React.Fragment>
+            
+        )
+    }
+}
