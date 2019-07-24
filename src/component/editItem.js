@@ -11,62 +11,53 @@ export default class EditItem extends Component {
     render() {
         return(
             <React.Fragment>
-{/* 
-            <header>
-                <img className="logo" src="https://i.imgur.com/i6sybqa.png"></img>
-            </header> */}
-            
-                <div className="app">
-                    <div className="editItem">
-                        <div className="editItemTitleContainer">
-                            <p>edit item</p>
-                            <div className="buttonsContainer">
-                                <button>save changes</button>
-                                <button>delete item</button>
+                <div className="editItem-editItemContainer">
+                    <div className="editItem-editItemTitleContainer">
+                        <p>edit item</p>
+                        <div className="editItem-buttonsContainer">
+                            <button>save changes</button>
+                            <button>delete item</button>
+                        </div>
+                    </div>
+
+                    <form className="editItem-editItemInfoContainer" action="" method="post">
+                        <div className="editItem-editItemContainerRowOne">
+                            <div className="editItem-editItemNameContainer">
+                                <label htmlFor="editItem-editItemName">name</label>
+                                <input className="editItem-editItemName" type="text"></input>
+                            </div>
+                            <div className="editItem-qrCodeContainer">
+                                <img className="editItem-qrcode" src="https://lh3.googleusercontent.com/JhlUkFmf_qYUMEV_H-WPvG_TMB7oiSY8jqqRIkzJ_cZRe0eWYIx_x59NPMX-gMpUSRZN=s128"/>
                             </div>
 
                         </div>
-                        <form className="editItemInfoContainer" action="" method="post">
-                            <div className="editItemContainerRowOne">
-                                <div className="editItemNameContainer">
-                                    <label htmlFor="editItemName">name</label>
-                                    <input className="editItemName" type="text"></input>
+                        <div className="editItem-editCommsContainer">
+                            <div className="editItem-editCommsOptionContainer">
+                                <div className="editItem-editTitleContainer">
+                                    <label htmlFor="editItem-editPhoneComms">phone</label>
+                                    <input className="editItem-editPhoneCheck" type="checkbox"></input>
                                 </div>
-                                <div className="qrCodeContainer">
-                                    <img className="qrcode" src="https://lh3.googleusercontent.com/JhlUkFmf_qYUMEV_H-WPvG_TMB7oiSY8jqqRIkzJ_cZRe0eWYIx_x59NPMX-gMpUSRZN=s128"/>
-                                </div>
-
+                                <input className="editItem-editPhoneComms" type="text"></input>
                             </div>
-                            <div className="editCommsContainer">
-                                <div className="editCommsOptionContainer">
-                                    <div className="editTitleContainer">
-                                        <label htmlFor="editPhoneComms">phone</label>
-                                        <input className="editPhoneCheck" type="checkbox"></input>
-                                    </div>
-                                    <input className="editPhoneComms" type="text"></input>
+                            <div className="editItem-editCommsOptionContainer">
+                                <div className="editItem-editTitleContainer">
+                                    <label htmlFor="editItem-editTextComms">text</label>
+                                    <input className="editItem-editTextCheck" type="checkbox"></input>
                                 </div>
-                                <div className="editCommsOptionContainer">
-                                    <div className="editTitleContainer">
-                                        <label htmlFor="editTextComms">text</label>
-                                        <input className="editTextCheck" type="checkbox"></input>
-                                    </div>
-                                    <input className="editTextComms" type="text"></input>
+                                <input className="editItem-editTextComms" type="text"></input>
+                            </div>
+                            <div className="editItem-editCommsOptionContainer">
+                                <div className="editItem-editTitleContainer">
+                                    <label htmlFor="editItem-editEmailComms">email</label>
+                                    <input className="editItem-editTextCheck" type="checkbox"></input>
                                 </div>
-                                <div className="editCommsOptionContainer">
-                                    <div className="editTitleContainer">
-                                        <label htmlFor="editEmailComms">email</label>
-                                        <input className="editTextCheck" type="checkbox"></input>
-                                    </div>
-                                    <input className="editEmailComms" type="text"></input>
-                                </div>
-
+                                <input className="editItem-editEmailComms" type="text"></input>
                             </div>
 
-                        </form>
-                    </div>
+                        </div>
+
+                    </form>
                 </div>
-
-
             </React.Fragment>
             
         )

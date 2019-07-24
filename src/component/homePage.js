@@ -11,9 +11,6 @@ export default class HomePage extends Component {
     render() {
         return(
             <React.Fragment>
-                <div className="logoOne">
-                    <img src="https://i.imgur.com/i6sybqa.png"></img>
-                </div>
 
                 <div className="home-userHomeContainer">
                     <div className="home-accountInfo">

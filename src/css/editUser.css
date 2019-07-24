@@ -1,68 +1,67 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap');
 
-
-
-header {
-    display: flex;
-}
-
-.logo {
-    height: 100px;
-    position: absolute;
-    margin-top: 5rem;
-    margin-left: 2rem;
-}
-
-body {
-    display: flex;
-}
-
-.app {
-    border: 1px solid black;
-    height:700px;
-    width:700px;
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.editUser {
-    display: flex;
-    flex-direction: column;
+.editUser-editUserContainer {
     /* border: 1px dashed black; */
-    position: relative;
-    margin-top: -10rem;
     width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    padding: 0.2rem 0.2rem;
 }
 
-.editUserTitleContainer {
+.editUser-editUserContainer label {
+    font-size: 12px;
+    color: #757575
+}
+
+.editUser-editUserContainer p {
+    font-size: 12px;
+}
+
+.editUser-editUserTitleContainer {
+    border-bottom: 1px solid black;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid black;
-    justify-content: space-between; 
     padding: 0.2rem 0.2rem;
     align-items: flex-end;
+    justify-content: space-between; 
 }
 
-.editUserInfoContainer {
+.editUser-editUserInfoContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
     padding: 0.2rem 0.2rem;
-    margin-top: .5rem;
     align-items: flex-start;
 }
 
-.editUserContainerRowTwo {
+.editUser-editUserContainerRowOne {
     display: flex;
     flex-direction: row;
-    margin-top: .5rem;
     align-items: flex-end;
     justify-content: space-between;
+    padding: 0.2rem 0.2rem;
     width: 100%;
 }
 
-.editUserCommOptionContainer {
+.editUser-editNameContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding: 0.2rem 0.2rem; */
+}
+
+.editUser-editUserContainerRowTwo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0.2rem 0.2rem;
+    width: 100%;
+}
+
+.editUser-editUserCommOptionContainer {
     flex-grow: 1;
 }
 
