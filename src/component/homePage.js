@@ -15,136 +15,134 @@ export default class HomePage extends Component {
                     <img src="https://i.imgur.com/i6sybqa.png"></img>
                 </div>
 
-                <div className="homePageContainer">
-                    <div className="accountInfo">
-                        <div className="accountInfoTitle">
+                <div className="home-userHomeContainer">
+                    <div className="home-accountInfo">
+                        <div className="home-accountTitleContainer">
                             <p>account information</p>
                             <button>edit user</button>
                         </div>
-                        {/* <div className="userInfo">
-                            <div className="nameInfo">
+                        <div className="home-userInfo">
+                            <div className="home-nameInfo">
                                 <label htmlFor="name">name</label>
-                                <h5 className="name"> Joe Tustin </h5>
+                                <h5 className="home-name"> Joe Tustin </h5>
                             </div>
-                            <div className="contact">
-                                <div className="email">
+                            <div className="home-contact">
+                                <div className="home-email">
                                     <label htmlFor="email">email</label>
-                                    <h5 className="email">J.Tustin@gmail.com</h5>
+                                    <h5 className="home-email">J.Tustin@gmail.com</h5>
                                 </div>
-                                <div className="phone">
+                                <div className="home-phone">
                                     <label htmlFor="phone">phone</label>
-                                    <h5 className="phone">(720) 487-3045</h5>
+                                    <h5 className="home-phone">(720) 487-3045</h5>
                                 </div>
                             </div>
-                        </div> */}
+                        </div> 
+
+                        <div className="home-trackedItemsContainer">
+                            <div className="home-trackedItemsTitleContainer">
+                                <p>tracked items</p>
+                                <button>add new item</button>
+                            </div>
+
+                            <div className="home-trackedItem">
+                                <div className="home-itemNameContainer">
+                                    <label htmlFor="home-itemName">item name</label>
+                                    <h5 className="home-itemName">Water Bottle</h5>
+                                </div>
+                                <div className="home-commPrefContainer">
+                                    <div className="home-phoneCheckBox">
+                                        <label htmlFor="home-phoneCheck">phone</label>
+                                        <input className="home-phoneCheck" type="checkbox"></input>
+                                    </div>
+                                    <div className="home-textCheckBox">
+                                        <label htmlFor="home-textCheck">text</label>
+                                        <input className="home-textCheck" type="checkbox"></input>
+                                    </div>
+                                    <div className="home-emailCheckBox">
+                                        <label htmlFor="home-emailCheck">email</label>
+                                        <input className="home-emailCheck" type="checkbox"></input>
+                                    </div>
+                                </div>
+                                <div className="home-editItemButtonContainer">
+                                    <button className="home-editItemButton">edit</button>
+                                </div>
+                            </div>
+
+                            <div className="home-trackedItem">
+                                <div className="home-itemNameContainer">
+                                    <label htmlFor="home-itemName">item name</label>
+                                    <h5 className="home-itemName">Drivers License</h5>
+                                </div>
+                                <div className="home-commPrefContainer">
+                                    <div className="home-phoneCheckBox">
+                                        <label htmlFor="home-phoneCheck">phone</label>
+                                        <input className="home-phoneCheck" type="checkbox"></input>
+                                    </div>
+                                    <div className="home-textCheckBox">
+                                        <label htmlFor="home-textCheck">text</label>
+                                        <input className="home-textCheck" type="checkbox"></input>
+                                    </div>
+                                    <div className="home-emailCheckBox">
+                                        <label htmlFor="home-emailCheck">email</label>
+                                        <input className="home-emailCheck" type="checkbox"></input>
+                                    </div>
+                                </div>
+                                <div className="home-editItemButtonContainer">
+                                    <button className="home-editItemButton">edit</button>
+                                </div>
+                            </div>
+
+                            <div className="home-trackedItem">
+                                <div className="home-itemNameContainer">
+                                    <label htmlFor="home-itemName">item name</label>
+                                    <h5 className="home-itemName">Cell Phone</h5>
+                                </div>
+                                <div className="home-commPrefContainer">
+                                    <div className="home-phoneCheckBox">
+                                        <label htmlFor="home-phoneCheck">phone</label>
+                                        <input className="home-phoneCheck" type="checkbox"></input>
+                                    </div>
+                                    <div className="home-textCheckBox">
+                                        <label htmlFor="home-textCheck">text</label>
+                                        <input className="home-textCheck" type="checkbox"></input>
+                                    </div>
+                                    <div className="home-emailCheckBox">
+                                        <label htmlFor="home-emailCheck">email</label>
+                                        <input className="home-emailCheck" type="checkbox"></input>
+                                    </div>
+                                </div>
+                                <div className="home-editItemButtonContainer">
+                                    <button className="home-editItemButton">edit</button>
+                                </div>
+                            </div>
+
+                            <div className="home-trackedItem">
+                                <div className="home-itemNameContainer">
+                                    <label htmlFor="home-itemName">item name</label>
+                                    <h5 className="home-itemName">Cat</h5>
+                                </div>
+                                <div className="home-commPrefContainer">
+                                    <div className="home-phoneCheckBox">
+                                        <label htmlFor="home-phoneCheck">phone</label>
+                                        <input className="home-phoneCheck" type="checkbox"></input>
+                                    </div>
+                                    <div className="home-textCheckBox">
+                                        <label htmlFor="home-textCheck">text</label>
+                                        <input className="home-textCheck" type="checkbox"></input>
+                                    </div>
+                                    <div className="home-emailCheckBox">
+                                        <label htmlFor="home-emailCheck">email</label>
+                                        <input className="home-emailCheck" type="checkbox"></input>
+                                    </div>
+                                </div>
+                                <div className="home-editItemButtonContainer">
+                                    <button className="home-editItemButton">edit</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    {/* <div className="trackedItems">
-                        <div className="homePageTitle">
-                            <p>tracked items</p>
-                            <button>add new item</button>
-                        </div>
-                        <div className="trackedItem">
-                            <div className="itemNameContainer">
-                                <label htmlFor="itemName">item name</label>
-                                <h5 className="itemName">Water Bottle</h5>
-                            </div>
-                            <div className="commPrefContainer">
-                                <div className="phoneCheckBox">
-                                    <label htmlFor="phoneCheck">phone</label>
-                                    <input className="phoneCheck" type="checkbox"></input>
-                                </div>
-                                <div className="textCheckBox">
-                                    <label htmlFor="textCheck">text</label>
-                                    <input className="textCheck" type="checkbox"></input>
-                                </div>
-                                <div className="emailCheckBox">
-                                    <label htmlFor="emailCheck">email</label>
-                                    <input className="emailCheck" type="checkbox"></input>
-                                </div>
-                            </div>
-                            <div className="editItemButtonContainer">
-                                <button className="editItemButton">edit</button>
-                            </div>
-                        </div>
-
-                        <div className="trackedItem">
-                            <div className="itemNameContainer">
-                                <label htmlFor="itemName">item name</label>
-                                <h5 className="itemName">Drivers License</h5>
-                            </div>
-                            <div className="commPrefContainer">
-                                <div className="phoneCheckBox">
-                                    <label htmlFor="phoneCheck">phone</label>
-                                    <input className="phoneCheck" type="checkbox"></input>
-                                </div>
-                                <div className="textCheckBox">
-                                    <label htmlFor="textCheck">text</label>
-                                    <input className="textCheck" type="checkbox"></input>
-                                </div>
-                                <div className="emailCheckBox">
-                                    <label htmlFor="emailCheck">email</label>
-                                    <input className="emailCheck" type="checkbox"></input>
-                                </div>
-                            </div>
-                            <div className="editItemButtonContainer">
-                                <button className="editItemButton">edit</button>
-                            </div>
-                        </div>
-
-                        <div className="trackedItem">
-                            <div className="itemNameContainer">
-                                <label htmlFor="itemName">item name</label>
-                                <h5 className="itemName">Cell Phone</h5>
-                            </div>
-                            <div className="commPrefContainer">
-                                <div className="phoneCheckBox">
-                                    <label htmlFor="phoneCheck">phone</label>
-                                    <input className="phoneCheck" type="checkbox"></input>
-                                </div>
-                                <div className="textCheckBox">
-                                    <label htmlFor="textCheck">text</label>
-                                    <input className="textCheck" type="checkbox"></input>
-                                </div>
-                                <div className="emailCheckBox">
-                                    <label htmlFor="emailCheck">email</label>
-                                    <input className="emailCheck" type="checkbox"></input>
-                                </div>
-                            </div>
-                            <div className="editItemButtonContainer">
-                                <button className="editItemButton">edit</button>
-                            </div>
-                        </div>
-
-                        <div className="trackedItem">
-                            <div className="itemNameContainer">
-                                <label htmlFor="itemName">item name</label>
-                                <h5 className="itemName">Cat</h5>
-                            </div>
-                            <div className="commPrefContainer">
-                                <div className="phoneCheckBox">
-                                    <label htmlFor="phoneCheck">phone</label>
-                                    <input className="phoneCheck" type="checkbox"></input>
-                                </div>
-                                <div className="textCheckBox">
-                                    <label htmlFor="textCheck">text</label>
-                                    <input className="textCheck" type="checkbox"></input>
-                                </div>
-                                <div className="emailCheckBox">
-                                    <label htmlFor="emailCheck">email</label>
-                                    <input className="emailCheck" type="checkbox"></input>
-                                </div>
-                            </div>
-                            <div className="editItemButtonContainer">
-                                <button className="editItemButton">edit</button>
-                            </div>
-                        </div>
-                    </div> */}
-
-
                 </div>
             </React.Fragment>
-            
         )
     }
 }
