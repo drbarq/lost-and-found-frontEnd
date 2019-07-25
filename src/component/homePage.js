@@ -22,16 +22,11 @@ export default class HomePage extends Component {
     }
 
     componentDidMount = () => {
-        const urlUser = "https://stark-plateau-81274.herokuapp.com/users/1"
-        const urlItems = "https://stark-plateau-81274.herokuapp.com/users/1/items"
+        const urlUser = "https://stark-plateau-81274.herokuapp.com/users/4"
         
         fetch(urlUser)
             .then(response => response.json())
             .then(result => this.formatUserResult(result))
-            .catch(error => console.error(error))
-        fetch(urlItems)
-            .then(response => response.json())
-            .then(result => this.formatItemResults(result))
             .catch(error => console.error(error))
     }
 
@@ -42,15 +37,8 @@ export default class HomePage extends Component {
                 lastName: result.last_name,
                 contactNumber: result.contact_number,
                 emailAddress: result.email_address,
-                password: result.password,
-                qrCode: result.qr_Code
-            }
-        })
-    }
-
-    formatItemResults = result => {
-        this.setState({
-            items: [result[0]]
+            },
+            items: result.items
         })
     }
 
