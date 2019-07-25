@@ -2,8 +2,6 @@ import React from 'react'
 
 export default function UserInfo(props) {
 
-    console.log(props.userInfo)
-
     return(
          <div className="home-userInfo">
             <div className="home-nameInfo">
