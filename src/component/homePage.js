@@ -42,6 +42,10 @@ export default class HomePage extends Component {
         })
     }
 
+    handleClickUserEdit = () => {
+        this.props.history.push('/editUser/')
+    }
+
     render() {
         return(
             <React.Fragment>
@@ -50,7 +54,7 @@ export default class HomePage extends Component {
                     <div className="home-accountInfo">
                         <div className="home-accountTitleContainer">
                             <p>account information</p>
-                            <button>edit user</button>
+                            <button onClick={this.handleClickUserEdit}>edit user</button>
                         </div>
 
                         <UserInfo userInfo={this.state.userInfo} />

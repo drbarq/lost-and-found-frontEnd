@@ -24,6 +24,7 @@ export default function App() {
         <Switch>
           <Route exact path="/" component={ Login } />
           <Route path="/homepage/" component={ HomePage } />
+          <Route path="/editUser" component={ EditUser } />
         </Switch>
 
       </div>
