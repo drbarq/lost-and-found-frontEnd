@@ -27,7 +27,7 @@ export default class EditItem extends Component {
                                 <input className="editItem-editItemName" type="text"></input>
                             </div>
                             <div className="editItem-qrCodeContainer">
-                                <img className="editItem-qrcode" src="https://lh3.googleusercontent.com/JhlUkFmf_qYUMEV_H-WPvG_TMB7oiSY8jqqRIkzJ_cZRe0eWYIx_x59NPMX-gMpUSRZN=s128"/>
+                                <img className="editItem-qrcode" src="https://i.imgur.com/SGcW4yf.png"/>
                             </div>
 
                         </div>

@@ -3,51 +3,38 @@ import React, { Component} from 'react'
 import TrackedItem from './trackedItem'
 import '../css/homePage.css'
 import UserInfo from './userInfo';
+import { withRouter } from 'react-router-dom'
+import { Redirect } from 'react-router-dom'
 
 
 export default class HomePage extends Component {
     constructor() {
         super()
         this.state = {
-            userInfo: {
-                firstName: "",
-                lastName: "",
-                contactNumber: "",
-                emailAddress: "",
-                password: "",
-                qrCode: "",
-            },
-            items: []
+            inUserEdit: false,
+            inAddItem: false
+
         }
     }
 
-    componentDidMount = () => {
-        const urlUser = "https://stark-plateau-81274.herokuapp.com/users/4"
-        
-        fetch(urlUser)
-            .then(response => response.json())
-            .then(result => this.formatUserResult(result))
-            .catch(error => console.error(error))
-    }
-
-    formatUserResult = result => {
-        this.setState({
-            userInfo: {
-                firstName: result.first_name,
-                lastName: result.last_name,
-                contactNumber: result.contact_number,
-                emailAddress: result.email_address,
-            },
-            items: result.items
-        })
-    }
-
     handleClickUserEdit = () => {
-        this.props.history.push('/editUser/')
+        this.setState({inUserEdit: true})
+    }
+
+    handleClickAddItem = () => {
+        this.setState({inAddItem: true})
     }
 
     render() {
+        if(this.state.inUserEdit === true) {
+            return <Redirect to='/editUser' />
+        } else if (this.state.inAddItem === true) {
+            return <Redirect to='/newItem' />
+        }
+
+
         return(
+            
             <React.Fragment>
 
                 <div className="home-userHomeContainer">
@@ -57,14 +44,14 @@ export default class HomePage extends Component {
                             <button onClick={this.handleClickUserEdit}>edit user</button>
                         </div>
 
-                        <UserInfo userInfo={this.state.userInfo} />
+                        <UserInfo userInfo={this.props.userInfo} />
                        
                         <div className="home-trackedItemsContainer">
                             <div className="home-trackedItemsTitleContainer">
                                 <p>tracked items</p>
-                                <button>add new item</button>
+                                <button onClick={this.handleClickAddItem}>add new item</button>
                             </div>
-                            <TrackedItem items={this.state.items} />
+                            <TrackedItem items={this.props.items} />
                         </div>
 
                     </div>

@@ -8,7 +8,7 @@ export default class EditUser extends Component {
         this.state = {}
     }
 
-    render() {
+    render(props) {
         return(
             <React.Fragment>
                 <div className="editUser-editUserContainer">
