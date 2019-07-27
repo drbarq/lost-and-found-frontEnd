@@ -29,7 +29,7 @@ export default class TrackedItem extends Component {
                             <label htmlFor="home-itemName">item name</label>
                             <h5 className="home-itemName">{item.name}</h5>
                         </div>
-                        <ItemCommRender comms={item.contact} />
+                        <ItemCommRender comms={item.contact_methods} />
                         <div className="home-editItemButtonContainer">
                             <button className="home-editItemButton" onClick={this.handleClickEditItem}>edit</button>
                         </div>

@@ -13,7 +13,7 @@
 
 button {
     background-color: #FAF2CC; 
-
+    /* pointer-events: auto; */
 }
 
 .home-userHomeContainer label {
