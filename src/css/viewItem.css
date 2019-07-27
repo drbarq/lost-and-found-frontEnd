@@ -8,25 +8,22 @@
     flex-direction: column;
     margin-top: 2em;
     padding: 0.2rem 0.2rem;
+    border-radius: 25px;
 }
 
 .viewItem-viewItemContainer label {
     font-size: 12px;
-    /* color: #757575; */
     color: #FAF2CC;
-
 }
 
 .viewItem-viewItemContainer p {
     font-size: 12px;
     color: #FAF2CC;
-
 }
 
 .viewItem-viewItemTitleContainer {
     /* border-bottom: 1px solid black; */
     border-bottom: 1px solid #BAC267;
-
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -40,6 +37,10 @@
     height: 80px;
     margin-right: 1em;
     margin-top: 1em;
+}
+
+.viewItem-viewItemInfoContainer {
+    border-radius: 25px;
 }
 
 .viewItem-viewItemContainerRowOne {
@@ -58,10 +59,6 @@
     /* padding: 0.2rem 0.2rem; */
 }
 
-.viewItem-viewItemNameContainer label {
-    padding: 0.2rem 0.2rem;
-}
-
 .viewItem-viewCommsContainer{
     display: flex;
     flex-direction: row;
@@ -75,12 +72,8 @@
 
 .viewItem-viewTitleContainer {
     display: flex;
-    flex-direction: row;
-    padding: 0.2rem 0.2rem;
-}
-
-.viewItem-viewTitleContainer label {
-    margin-right: .2em;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .viewItem-viewCommsOptionContainer {

@@ -94,7 +94,8 @@ export default class App extends Component {
             />
           <Route 
             path="/viewItem/"
-            render={() => <ViewItem  />}
+            // render={(event) => <ViewItem  itemInfo={this.state.items} event={event}/>}
+            render={() => <ViewItem  itemInfo={this.state.items} value={this.props.value}/>}
             />
         </Switch>
 
