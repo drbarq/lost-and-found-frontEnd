@@ -8,18 +8,18 @@ export default class TrackedItem extends Component {
     constructor() {
         super()
         this.state = {
-            inItemEdit: false
+            inViewItem: false
         }
     }
 
-    handleClickEditItem = () => {
-        this.setState({inItemEdit: true})
+    handleClickViewItem = () => {
+        this.setState({inViewItem: true})
     }
 
 
     render () {
-        if(this.state.inItemEdit === true) {
-            return <Redirect to='/editItem' />
+        if(this.state.inViewItem === true) {
+            return <Redirect to='/viewItem/' />
         }
         return (
             this.props.items.map(item => {
@@ -30,8 +30,8 @@ export default class TrackedItem extends Component {
                             <h5 className="home-itemName">{item.name}</h5>
                         </div>
                         <ItemCommRender comms={item.contact_methods} />
-                        <div className="home-editItemButtonContainer">
-                            <button className="home-editItemButton" onClick={this.handleClickEditItem}>edit</button>
+                        <div className="home-viewItemButtonContainer">
+                            <button className="home-viewItemButton" onClick={this.handleClickViewItem}>view</button>
                         </div>
                     </div>
                 )}

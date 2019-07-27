@@ -8,6 +8,7 @@ import EditItem from './component/editItem'
 import EditUser from './component/editUser'
 import HeaderLogo from './component/headerLogo'
 import ViewUser from './component/viewUser';
+import ViewItem from './component/viewItem'
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 
 // import react router 
@@ -47,7 +48,7 @@ export default class App extends Component {
             lastName: result.last_name,
             contactNumber: result.contact_number,
             emailAddress: result.email_address,
-        },
+          },
         items: result.items
     })
   }
@@ -84,12 +85,16 @@ export default class App extends Component {
             />
           <Route path="/editItem" component={ EditItem } />
           <Route 
-            path="/newItem"
+            path="/newItem/"
             render ={ () => <NewItem userInfo={this.state.userInfo}/>} 
           />
           <Route 
             path="/accountInformation/"
             render={ () => <ViewUser userInfo={this.state.userInfo} />}
+            />
+          <Route 
+            path="/viewItem/"
+            render={() => <ViewItem  />}
             />
         </Switch>
 
