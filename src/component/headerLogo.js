@@ -10,9 +10,9 @@ export default function HeaderLogo() {
             </div>
             <div className="navBar">
                 <div className="navBarButtons">
-                    <i class="fa fa-home fa-2x"></i>
-                    <i class="fa fa-user fa-2x"></i>
-                    <i class="fa fa-plus-square fa-2x"></i>
+                    <i className="fa fa-home fa-2x"></i>
+                    <i className="fa fa-user fa-2x"></i>
+                    <i className="fa fa-plus-square fa-2x"></i>
                 </div>
             </div>
         </div>
