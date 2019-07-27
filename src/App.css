@@ -6,11 +6,40 @@
     padding: 0; 
 }
 
+.navBarContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px dashed black; */
+}
+
+.navBar {
+    padding-left: 3.5rem;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.navBarButtons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.navBarButtons i {
+    padding: 0.2rem 1rem;
+}
+
 .logoOne img {
     height: 100px;
 }
 
 .logoOne {
+    /* border: 1px solid black; */
     align-self: flex-start;
     margin-top: 2em;
     margin-left: 1em;

@@ -13,7 +13,6 @@ export default class HomePage extends Component {
         this.state = {
             inUserEdit: false,
             inAddItem: false
-
         }
     }
 
