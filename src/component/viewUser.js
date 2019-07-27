@@ -15,8 +15,9 @@ export default class ViewUser extends Component {
                     <div className="viewUser-viewUserTitleContainer">
                         <p>view account information</p>
                         <div className="viewUser-buttonsContainer">
-                            <button>save account changes</button>
-                            <button>delete user</button>
+                            {/* <button>edit user</button> */}
+                            {/* <button>save account changes</button> */}
+                            {/* <button>delete user</button> */}
                         </div>
 
                     </div>

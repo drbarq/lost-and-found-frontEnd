@@ -7,12 +7,13 @@ import NewItem from './component/newItem'
 import EditItem from './component/editItem'
 import EditUser from './component/editUser'
 import HeaderLogo from './component/headerLogo'
+import ViewUser from './component/viewUser';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 
 // import react router 
 
 import './App.css';
-import ViewUser from './component/viewUser';
+
 
 export default class App extends Component {
   constructor() {
@@ -61,17 +62,20 @@ export default class App extends Component {
             </div>
             <div className="navBar">
                 <div className="navBarButtons">
-                    <button className="navBar-home-button"><i className="fa fa-home fa-2x"></i></button>
+                    {/* <button className="navBar-home-button"><i className="fa fa-home fa-2x"></i></button> */}
                     {/* <button className="navbar-user-button" onClick={this.handleClickUserInfo}><i className="fa fa-user fa-2x"></i></button> */}
-                    <button className="navbar-user-button" to="/accountInformation"><i className="fa fa-user fa-2x"></i></button>
-                    <button className="navBar-newItem-button"><i className="fa fa-plus-square  fa-2x"></i></button>
+                    <Link className="navbar-home-button" to="/"><i className="fa fa-home fa-2x"></i></Link>
+                    <Link className="navbar-user-button" to="/accountInformation/"><i className="fa fa-user fa-2x"></i></Link>
+                    <Link className="navbar-user-button" to="/newItem/"><i className="fa fa-plus-square fa-2x"></i></Link>
+                    {/* <button className="navbar-user-button" to="/accountInformation"><i className="fa fa-user fa-2x"></i></button> */}
+                    {/* <button className="navBar-newItem-button"><i className="fa fa-plus-square  fa-2x"></i></button> */}
                 </div>
             </div>
           </div>
 
         <Switch>
           <Route 
-            path="/"
+            exact path="/"
             render={ () => <HomePage userInfo={this.state.userInfo} items={this.state.items}/>} 
             />
           <Route 
@@ -84,7 +88,7 @@ export default class App extends Component {
             render ={ () => <NewItem userInfo={this.state.userInfo}/>} 
           />
           <Route 
-            path="/accountInformation"
+            path="/accountInformation/"
             render={ () => <ViewUser userInfo={this.state.userInfo} />}
             />
         </Switch>

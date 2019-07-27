@@ -40,7 +40,6 @@ export default class HomePage extends Component {
                     <div className="home-accountInfo">
                         <div className="home-accountTitleContainer">
                             <p>account information</p>
-                            <button onClick={this.handleClickUserEdit}>edit user</button>
                         </div>
 
                         <UserInfo userInfo={this.props.userInfo} />
@@ -48,7 +47,6 @@ export default class HomePage extends Component {
                         <div className="home-trackedItemsContainer">
                             <div className="home-trackedItemsTitleContainer">
                                 <p>tracked items</p>
-                                <button onClick={this.handleClickAddItem}>add new item</button>
                             </div>
                             <TrackedItem items={this.props.items} />
                         </div>
