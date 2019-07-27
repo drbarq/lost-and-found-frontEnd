@@ -24,8 +24,14 @@ export default class ViewUser extends Component {
                     <form className="viewUser-viewUserInfoContainer" action="" method="post">
                         <div className="viewUser-viewUserContainerRowOne">
                             <div className="viewUser-viewNameContainer">
-                                <label htmlFor="viewUser-viewName">name</label>
-                                <input className="viewUser-viewName" type="text"></input>
+                                <div className="viewUser-firstName">
+                                    <label htmlFor="viewUser-viewFirstName">first name</label>
+                                    <input className="iewUser-viewFirstName" type="text" defaultValue={this.props.userInfo.firstName}></input>
+                                </div>
+                                <div className="viewUser-lastName">
+                                    <label htmlFor="viewUser-viewLastName">last name</label>
+                                    <input className="viewUser-viewLastName" type="text" defaultValue={this.props.userInfo.lastName}></input>
+                                </div>
                             </div>
                         </div>
                         <div className="viewUser-viewUserContainerRowTwo">

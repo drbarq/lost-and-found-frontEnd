@@ -98,20 +98,3 @@ export default class App extends Component {
   )}
 }
 
-
-
-
-
-
-//   <div className="app">
-//   <HeaderLogo />
-
-//   {/* <Route path="/login" component={Login}/> */}
-//   {/* <Login /> */}
-//   {/* <NewUser /> */}
-//   {/* <HomePage /> */}
-//   {/* <NewItem /> */}
-//   {/* <EditUser /> */}
-//   <EditItem />
-
-// </div>

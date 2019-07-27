@@ -48,26 +48,37 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
     padding: 0.2rem 0.2rem;
     width: 100%;
     margin-top: 1em;
 }
 
 .viewUser-viewNameContainer {
+    width: 65%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     /* padding: 0.2rem 0.2rem; */
 }
+.viewUser-firstName, .viewUser-lastName {
+    display: flex;
+    flex-direction: column;
+} 
+
+input {
+    margin-top: .5em;
+}
 
 .viewUser-viewUserContainerRowTwo {
+    /* width: 65%; */
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
     padding: 0.2rem 0.2rem;
-    width: 100%;
+    width: 65%;
     margin-top: 1em;
     margin-bottom: 1em;
 }
