@@ -5,7 +5,8 @@
     margin: 0;
     padding: 0;
     /* background-color: #2C4246;  */
-    background-color: #CC4B3E; 
+    /* background-color: #CC4B3E;  */
+    background-color: #54837A; 
     /* background-color: #F7F8F5;  */
 }
 
@@ -79,7 +80,10 @@
     flex-direction: column;
     align-items: center;
     /* background-color: #43C4BA; */
-    background-color: #54837A;
+    /* background-color: #54837A; */
+    /* background-color: #CC4B3E;  */
+    background-color: #2C4246; 
+
     /* background-color: #7998EB; */
     
 }

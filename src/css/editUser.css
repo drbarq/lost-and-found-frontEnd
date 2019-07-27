@@ -2,6 +2,7 @@
 
 .editUser-editUserContainer {
     /* border: 1px dashed black; */
+    border: 1px solid #CC4B3E;
     width: 85%;
     display: flex;
     flex-direction: column;
@@ -11,21 +12,28 @@
 
 .editUser-editUserContainer label {
     font-size: 12px;
-    color: #757575
+    /* color: #757575; */
+    color: #FAF2CC;
+
 }
 
 .editUser-editUserContainer p {
     font-size: 12px;
+    color: #FAF2CC;
+
 }
 
 .editUser-editUserTitleContainer {
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
+    border-bottom: 1px solid #BAC267;
+
     width: 100%;
     display: flex;
     flex-direction: row;
     padding: 0.2rem 0.2rem;
     align-items: flex-end;
     justify-content: space-between; 
+    margin-top: 1em;
 }
 
 .editUser-editUserInfoContainer {
@@ -43,6 +51,7 @@
     justify-content: space-between;
     padding: 0.2rem 0.2rem;
     width: 100%;
+    margin-top: 1em;
 }
 
 .editUser-editNameContainer {
@@ -59,6 +68,8 @@
     justify-content: space-between;
     padding: 0.2rem 0.2rem;
     width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .editUser-editUserCommOptionContainer {
