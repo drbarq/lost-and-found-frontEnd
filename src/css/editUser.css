@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap');
-
 .editUser-editUserContainer {
     /* border: 1px dashed black; */
     border: 1px solid #CC4B3E;
@@ -8,25 +7,22 @@
     flex-direction: column;
     margin-top: 2em;
     padding: 0.2rem 0.2rem;
+    border-radius: 25px;
 }
 
 .editUser-editUserContainer label {
     font-size: 12px;
-    /* color: #757575; */
     color: #FAF2CC;
-
 }
 
 .editUser-editUserContainer p {
     font-size: 12px;
     color: #FAF2CC;
-
 }
 
 .editUser-editUserTitleContainer {
     /* border-bottom: 1px solid black; */
     border-bottom: 1px solid #BAC267;
-
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -34,6 +30,17 @@
     align-items: flex-end;
     justify-content: space-between; 
     margin-top: 1em;
+}
+
+.editUser-buttonsContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+    /* justify-self: baseline; */
+    /* padding: 0.2rem 0.2rem; */
+
 }
 
 .editUser-editUserInfoContainer {
@@ -42,38 +49,56 @@
     justify-content: space-between; 
     padding: 0.2rem 0.2rem;
     align-items: flex-start;
+    border-radius: 25px;
 }
 
 .editUser-editUserContainerRowOne {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0.2rem 0.2rem;
     width: 100%;
     margin-top: 1em;
 }
 
 .editUser-editNameContainer {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.editUser-firstName, .editUser-lastName, .editUser-editTitleContainer {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    /* padding: 0.2rem 0.2rem; */
+} 
+
+input {
+    margin-top: .5em;
+    color: #BAC267;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
 }
 
+
+
 .editUser-editUserContainerRowTwo {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0.2rem 0.2rem;
-    width: 100%;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
 .editUser-editUserCommOptionContainer {
-    flex-grow: 1;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
