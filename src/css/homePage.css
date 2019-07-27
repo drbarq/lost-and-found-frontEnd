@@ -8,6 +8,7 @@
     flex-direction: column;
     margin-top: 2em;
     padding: 0.2rem 0.2rem;
+    border-radius: 25px;
 }
 
 button {
@@ -30,6 +31,7 @@ button {
 .home-accountInfo {
     display: flex;
     flex-direction: column;
+    border-radius: 25px;
 }
 
 .home-accountTitleContainer p {

@@ -8,25 +8,22 @@
     flex-direction: column;
     margin-top: 2em;
     padding: 0.2rem 0.2rem;
+    border-radius: 25px;
 }
 
 .viewUser-viewUserContainer label {
     font-size: 12px;
-    /* color: #757575; */
     color: #FAF2CC;
-
 }
 
 .viewUser-viewUserContainer p {
     font-size: 12px;
     color: #FAF2CC;
-
 }
 
 .viewUser-viewUserTitleContainer {
     /* border-bottom: 1px solid black; */
     border-bottom: 1px solid #BAC267;
-
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -42,13 +39,13 @@
     justify-content: space-between; 
     padding: 0.2rem 0.2rem;
     align-items: flex-start;
+    border-radius: 25px;
 }
 
 .viewUser-viewUserContainerRowOne {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    /* justify-content: space-between; */
     justify-content: center;
     padding: 0.2rem 0.2rem;
     width: 100%;
@@ -60,31 +57,36 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* padding: 0.2rem 0.2rem; */
 }
-.viewUser-firstName, .viewUser-lastName {
+.viewUser-firstName, .viewUser-lastName, .viewUser-viewTitleContainer {
     display: flex;
     flex-direction: column;
 } 
 
 input {
     margin-top: .5em;
+    color: #BAC267;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .viewUser-viewUserContainerRowTwo {
-    /* width: 65%; */
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0.2rem 0.2rem;
-    width: 65%;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
 .viewUser-viewUserCommOptionContainer {
-    flex-grow: 1;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
