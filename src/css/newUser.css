@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap');
 
-
 .newUser-newUserForm {
-    /* border: 1px dashed black; */
     width: 85%;
     margin-top: 2em;
     display: flex;
@@ -51,6 +49,3 @@
     padding: 0.2rem 0.2rem;
     margin-bottom: .5em;
 }
-
-
-

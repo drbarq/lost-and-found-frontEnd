@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap');
 
 .viewUser-viewUserContainer {
-    /* border: 1px dashed black; */
     border: 1px solid #CC4B3E;
     width: 85%;
     display: flex;
@@ -22,7 +21,6 @@
 }
 
 .viewUser-viewUserTitleContainer {
-    /* border-bottom: 1px solid black; */
     border-bottom: 1px solid #BAC267;
     width: 100%;
     display: flex;
@@ -58,6 +56,7 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
 .viewUser-firstName, .viewUser-lastName, .viewUser-viewTitleContainer {
     display: flex;
     flex-direction: column;

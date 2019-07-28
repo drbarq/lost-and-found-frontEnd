@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap');
 
 .home-userHomeContainer {
-    /* border: 1px dashed black; */
     border: 1px solid #CC4B3E;
     width: 85%;
     display: flex;
@@ -13,19 +12,16 @@
 
 button {
     background-color: #FAF2CC; 
-    /* pointer-events: auto; */
 }
 
 .home-userHomeContainer label {
     font-size: 12px;
-    /* color: #757575; */
     color: #FAF2CC;
 }
 
 .home-userHomeContainer p {
     font-size: 12px;
     color: #FAF2CC;
-    /* color: #CC4B3E; */
 }
 
 .home-accountInfo {
@@ -39,7 +35,6 @@ button {
 }
 
 .home-accountTitleContainer {
-    /* border-bottom: 1px solid #CC4B3E; */
     border-bottom: 1px solid #BAC267;
     width: 100%;
     display: flex;
@@ -55,7 +50,6 @@ button {
     flex-direction: column;
     justify-content: space-between;
     padding: 0.2rem 0.2rem;
-    
 }
 
 .home-contact {
