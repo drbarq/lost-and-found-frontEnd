@@ -55,7 +55,7 @@ export default class App extends Component {
         <div className="app">
           <div className="navBarContainer">
             <div className="logoOne">
-                <img src="https://i.imgur.com/yU93abh.png"></img>
+                <img src="https://i.imgur.com/N2lKQQ5.png"></img>
             </div>
             <div className="navBar">
                 <div className="navBarButtons">

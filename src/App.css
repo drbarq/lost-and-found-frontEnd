@@ -39,15 +39,15 @@
     padding: 0.2rem 1rem;
     /* background-color: #F7F8F5; */
     background-color: #FAF2CC;
-    color: black; 
-}
-
-.navBarButtons i:hover {
     color: #CC4B3E; 
 }
 
-.navBarButtons i:active {
+.navBarButtons i:hover {
     color: #BAC267; 
+}
+
+.navBarButtons i:active {
+    color: #FAF2CC; 
 }
 
 .logoOne img {
@@ -59,7 +59,7 @@
     background-color: #FAF2CC; 
     align-self: flex-start;
     margin-top: 2em;
-    margin-left: 1em;
+    margin-left: 2.5em;
 }
 
 .app {
