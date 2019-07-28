@@ -1,6 +1,8 @@
 import React, { Component} from 'react'
 import '../css/editItem.css'
 
+const itemBaseURL = "https://stark-plateau-81274.herokuapp.com/items/"
+
 export default class EditItem extends Component {
     constructor() {
         super()
@@ -28,17 +30,37 @@ export default class EditItem extends Component {
     }
 
     handleEditNameChange = (event) => {
-        // debugger
         this.setState({
             name: event.target.value,
             newName: event.target.value
         })
-
     }
 
     handleEditFieldChange = () => {
 
     }
+
+    editItemSubmit = () => {
+        // check to see what changed
+        const itemID = this.state.id
+        const itemURL = itemBaseURL+itemID
+
+        const nameChange = this.state.newName.length > 0 ? true : false
+        // event.preventDefault()
+        debugger;
+        if (nameChange) {
+            // optimistically render
+            this.setState({
+                name: this.state.newName
+            })
+            // send a post update
+            fetch(itemURL, {
+
+            })
+        }
+    }
+
+
     render() {
         return(
             <React.Fragment>
@@ -46,7 +68,7 @@ export default class EditItem extends Component {
                     <div className="editItem-editItemTitleContainer">
                         <p>edit item</p>
                         <div className="editItem-buttonsContainer">
-                            <button>save changes</button>
+                            <button onClick={this.editItemSubmit}>save changes</button>
                             <button>delete item</button>
                         </div>
                     </div>
