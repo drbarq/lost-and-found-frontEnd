@@ -6,6 +6,7 @@ export default class ViewItem extends Component {
     constructor() {
         super()
         this.state = {
+            itemNumber: '',
             id: '',
             name: '',
             message: '',
@@ -14,23 +15,25 @@ export default class ViewItem extends Component {
             contact_methods: {}
         }
     }
-    // only works when the page is refreshed 
-    componentWillReceiveProps = (nextProps) => {
-        let itemInfo;
-        nextProps.itemInfo.map(item => {
-            if (item.id == this.props.value) {
-                // debugger
-                itemInfo = {
-                    id: item.id,
-                    name: item.name,
-                    message: item.message,
-                    qrCode: item.qrCode,
-                    contact_forms: item.contact_forms,
-                    contact_methods: item.contact_methods
+
+    static getDerivedStateFromProps = (nextProps, prevState) => {
+        if (prevState.itemNumber !== nextProps.value) {
+            return (
+            nextProps.itemInfo.find(item => {
+                if (item.id == nextProps.value) {
+                    return {
+                            itemNumber: nextProps.value,
+                            id: item.id,
+                            name: item.name,
+                            message: item.message,
+                            qrCode: item.qrCode,
+                            contact_forms: item.contact_forms,
+                            contact_methods: item.contact_methods
+                    }
                 }
-            }
-        })
-        this.setState(itemInfo)
+            })
+        )}
+        return null;
     }
 
     handleEditUser =() => {
