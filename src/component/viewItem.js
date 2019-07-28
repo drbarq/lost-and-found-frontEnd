@@ -14,7 +14,7 @@ export default class ViewItem extends Component {
             contact_methods: {}
         }
     }
-
+    // only works when the page is refreshed 
     componentWillReceiveProps = (nextProps) => {
         let itemInfo;
         nextProps.itemInfo.map(item => {
