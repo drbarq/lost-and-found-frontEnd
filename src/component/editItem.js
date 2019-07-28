@@ -40,6 +40,8 @@ export default class EditItem extends Component {
 
     }
 
+    // commented this out.  will revist on monday
+        // set two state variables and compare to send out request?  
     editItemSubmit = () => {
         // check to see what changed
         const itemID = this.state.id
@@ -55,6 +57,11 @@ export default class EditItem extends Component {
             })
             // send a post update
             fetch(itemURL, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(newPerson)
 
             })
         }
@@ -76,7 +83,7 @@ export default class EditItem extends Component {
                         <div className="editItem-editItemContainerRowOne">
                             <div className="editItem-editItemNameContainer">
                                 <label htmlFor="editItem-editItemName">name</label>
-                                <input className="editItem-editItemName" name="name" type="text" value={this.state.name} onChange={(event) => this.handleEditNameChange(event)}></input>
+                                <input className="editItem-editItemName" name="name" type="text" value={this.state.name} onChange={}></input>
                             </div>
                             <div className="editItem-qrCodeContainer">
                                 <img className="editItem-qrcode" src={this.state.qrCode}/>
@@ -86,19 +93,19 @@ export default class EditItem extends Component {
                             <div className="editItem-editCommsOptionContainer">
                                 <div className="editItem-editTitleContainer">
                                     <label htmlFor="editItem-editPhoneComms">phone</label>
-                                    <input className="editItem-editPhoneComms" name="text" type="text" value={this.state.contact_methods.phone} onChange={(event) => this.handleEditFieldChange(event)}></input>
+                                    <input className="editItem-editPhoneComms" name="text" type="text" value={this.state.contact_methods.phone} onChange={}></input>
                                 </div>
                             </div>
                             <div className="editItem-editCommsOptionContainer">
                                 <div className="editItem-editTitleContainer">
                                     <label htmlFor="editItem-editTextComms">text</label>
-                                    <input className="editItem-editTextComms" type="text" value={this.state.contact_methods.text} onChange={(event) => this.handleEditFieldChange(event)}></input>
+                                    <input className="editItem-editTextComms" type="text" value={this.state.contact_methods.text} onChange={}></input>
                                 </div>
                             </div>
                             <div className="editItem-editCommsOptionContainer">
                                 <div className="editItem-editTitleContainer">
                                     <label htmlFor="editItem-editEmailComms">email</label>
-                                    <input className="editItem-editEmailComms" type="text" value={this.state.contact_methods.email} onChange={(event) => this.handleEditFieldChange(event)}></input>
+                                    <input className="editItem-editEmailComms" type="text" value={this.state.contact_methods.email} onChange={}></input>
                                 </div>
                             </div>
                         </div>
