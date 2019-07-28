@@ -2,21 +2,36 @@
 
 .home-userHomeContainer {
     /* border: 1px dashed black; */
+    border: 1px solid #CC4B3E;
     width: 85%;
     display: flex;
     flex-direction: column;
     margin-top: 2em;
     padding: 0.2rem 0.2rem;
+    border-radius: 25px;
+}
+
+button {
+    background-color: #FAF2CC; 
+    /* pointer-events: auto; */
 }
 
 .home-userHomeContainer label {
     font-size: 12px;
-    color: #757575
+    /* color: #757575; */
+    color: #FAF2CC;
+}
+
+.home-userHomeContainer p {
+    font-size: 12px;
+    color: #FAF2CC;
+    /* color: #CC4B3E; */
 }
 
 .home-accountInfo {
     display: flex;
     flex-direction: column;
+    border-radius: 25px;
 }
 
 .home-accountTitleContainer p {
@@ -24,13 +39,15 @@
 }
 
 .home-accountTitleContainer {
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid #CC4B3E; */
+    border-bottom: 1px solid #BAC267;
     width: 100%;
     display: flex;
     flex-direction: row;
     padding: 0.2rem 0.2rem;
     align-items: flex-end;
     justify-content: space-between;
+    margin-top: 1em;
 }
 
 .home-userInfo {
@@ -38,6 +55,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 0.2rem 0.2rem;
+    
 }
 
 .home-contact {
@@ -54,7 +72,8 @@
 }
 
 .home-trackedItemsTitleContainer {
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid #CC4B3E; */
+    border-bottom: 1px solid #BAC267;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -66,6 +85,10 @@
 
 .home-trackedItemsTitleContainer p {
     font-size: 12px;
+}
+
+.home-trackedItemsContainer {
+    margin-bottom: 1em;
 }
 
 .home-trackedItem {
@@ -101,7 +124,7 @@
     flex-direction: column;
 }
 
-.home-editItemButtonContainer {
+.home-viewItemButtonContainer {
     display: flex;
     flex-direction: row;
     width: 33%;

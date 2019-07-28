@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap');
 
-.editItem-editItemContainer {
+.viewItem-viewItemContainer {
     border: 1px solid #CC4B3E;
     width: 85%;
     display: flex;
@@ -10,17 +10,17 @@
     border-radius: 25px;
 }
 
-.editItem-editItemContainer label {
+.viewItem-viewItemContainer label {
     font-size: 12px;
     color: #FAF2CC;
 }
 
-.editItem-editItemContainer p {
+.viewItem-viewItemContainer p {
     font-size: 12px;
     color: #FAF2CC;
 }
 
-.editItem-editItemTitleContainer {
+.viewItem-viewItemTitleContainer {
     border-bottom: 1px solid #BAC267;
     width: 100%;
     display: flex;
@@ -31,25 +31,17 @@
     margin-top: 1em;
 }
 
-.editItem-buttonsContainer {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-
-.editItem-qrcode {
+.viewItem-qrcode {
     height: 80px;
     margin-right: 1em;
     margin-top: 1em;
 }
 
-.editItem-editItemInfoContainer {
+.viewItem-viewItemInfoContainer {
     border-radius: 25px;
 }
 
-.editItem-editItemContainerRowOne {
+.viewItem-viewItemContainerRowOne {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -58,14 +50,14 @@
     width: 100%;
 }
 
-.editItem-editItemNameContainer {
+.viewItem-viewItemNameContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     /* padding: 0.2rem 0.2rem; */
 }
 
-.editItem-editCommsContainer {
+.viewItem-viewCommsContainer{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -76,13 +68,13 @@
     margin-bottom: 1em;
 }
 
-.editItem-editTitleContainer {
+.viewItem-viewTitleContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.editItem-editCommsOptionContainer {
+.viewItem-viewCommsOptionContainer {
     padding: 0.2rem 0.2rem;
 }
 

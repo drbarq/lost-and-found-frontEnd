@@ -11,11 +11,15 @@
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "@fortawesome/react-native-fontawesome": "^0.1.0",
+    "firebase": "^6.3.3",
     "font-awesome": "^4.7.0",
+    "libphonenumber-js": "^1.7.21",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-native-svg": "^9.5.3",
-    "react-scripts": "3.0.1"
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "unirest": "^0.6.0"
   },
   "scripts": {
     "start": "react-scripts start",

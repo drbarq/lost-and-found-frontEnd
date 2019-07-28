@@ -3,21 +3,68 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0; 
+    padding: 0;
+    background-color: #54837A; 
+}
+
+.navBarContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FAF2CC; 
+    border-radius: 25px 25px 0px 0px;
+}
+
+.navBar {
+    padding-left: 3.5rem;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    background-color: #FAF2CC; 
+}
+
+.navBarButtons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* background-color: #F7F8F5;  */
+    background-color: #FAF2CC; 
+}
+
+.navBarButtons i {
+    padding: 0.2rem 1rem;
+    /* background-color: #F7F8F5; */
+    background-color: #FAF2CC;
+    color: black; 
+}
+
+.navBarButtons i:hover {
+    color: #CC4B3E; 
+}
+
+.navBarButtons i:active {
+    color: #BAC267; 
 }
 
 .logoOne img {
     height: 100px;
+    background-color: #FAF2CC; 
 }
 
 .logoOne {
+    background-color: #FAF2CC; 
     align-self: flex-start;
     margin-top: 2em;
     margin-left: 1em;
 }
 
 .app {
-    border: 1px solid black;
+    border: 1px solid #CC4B3E;
+    border-radius: 25px;
     margin: 0 auto;
     height:700px;
     width:700px;
@@ -25,4 +72,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #2C4246; 
 }
+
+h5 {
+    color: #BAC267;
+}
+
+
+/* 2C4246  dark green  */
+/* 54837A lighter green */
+/* BAC267 lime green */
+/* FAF2CC offwhite */
+/* CC4B3E red  */
+
+
+/* F7F8F5 offwhite */
+/* 43C4BA bluegreen */
+/* 7998EB light purple  */
+/* 777595 dark purple  */
+/* 304696 dark blue */
+
