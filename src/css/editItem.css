@@ -31,6 +31,14 @@
     margin-top: 1em;
 }
 
+.editItem-buttonsContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
 .editItem-qrcode {
     height: 80px;
     margin-right: 1em;

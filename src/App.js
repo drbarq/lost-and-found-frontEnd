@@ -98,7 +98,7 @@ export default class App extends Component {
             />
           <Route 
             path="/editItem/"
-            render={(props) => <EditItem itemData={props.location.state.itemData}/>}
+            render={ () => <EditItem />}
             />
         </Switch>
 
