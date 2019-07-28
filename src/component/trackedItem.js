@@ -26,9 +26,6 @@ class TrackedItem extends Component {
 
 
     render () {
-        if(this.state.inViewItem === true) {
-            return <Redirect to='/viewItem/' />
-        }
         return (
             this.props.items.map(item => {
                 return(
