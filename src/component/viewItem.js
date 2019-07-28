@@ -36,12 +36,15 @@ export default class ViewItem extends Component {
         return null;
     }
 
-    handleEditUser =() => {
-        // debugger;
+    handleClickEditItem = (event) => {
+        let buttonData = event.target.id
+        this.props.history.push('/viewItem/', { viewItemButton: buttonData })
     }
 
-    render() {
+    // <button className="home-viewItemButton" id={item.id} onClick={(event) => this.handleClickViewItem(event)}>view</button>
 
+
+    render() {
         return(
             <React.Fragment>
                 <div className="viewItem-viewItemContainer">
@@ -81,7 +84,6 @@ export default class ViewItem extends Component {
                     </form>
                 </div>
             </React.Fragment>
-            
         )
     }
 }

@@ -6,25 +6,12 @@ import { withRouter } from "react-router-dom";
 
 
 class TrackedItem extends Component {
-    constructor() {
-        super()
-        this.state = {
-            inViewItem: false
-        }
-    }
 
-    // handleClickViewItem = (event) => {
-    //     // debugger
-    //     this.setState({inViewItem: true})
-    // }
     handleClickViewItem = (event) => {
-        // debugger
-        // this.setState({inViewItem: true})
         let buttonData = event.target.id
         this.props.history.push('/viewItem/', { viewItemButton: buttonData })
     }
-
-
+    
     render () {
         return (
             this.props.items.map(item => {
@@ -37,7 +24,6 @@ class TrackedItem extends Component {
                         <ItemCommRender comms={item.contact_methods} />
                         <div className="home-viewItemButtonContainer">
                             <button className="home-viewItemButton" id={item.id} onClick={(event) => this.handleClickViewItem(event)}>view</button>
-                            {/* <button className="home-viewItemButton" id={item.id} onClick={this.handleClickViewItem}>view</button> */}
                         </div>
                     </div>
                 )}
