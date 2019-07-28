@@ -43,7 +43,6 @@ export default class EditUser extends Component {
                                     <label htmlFor="editUser-editUserEmail">email</label>
                                     <input className="editUser-editUserEmail" type="text" defaultValue={this.props.userInfo.emailAddress}></input>
                                 </div>
-                                
                             </div>
                         </div>
                     </form>

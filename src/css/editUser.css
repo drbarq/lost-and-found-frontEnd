@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap');
 .editUser-editUserContainer {
-    /* border: 1px dashed black; */
     border: 1px solid #CC4B3E;
     width: 85%;
     display: flex;
@@ -21,7 +20,6 @@
 }
 
 .editUser-editUserTitleContainer {
-    /* border-bottom: 1px solid black; */
     border-bottom: 1px solid #BAC267;
     width: 100%;
     display: flex;
@@ -38,9 +36,6 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    /* justify-self: baseline; */
-    /* padding: 0.2rem 0.2rem; */
-
 }
 
 .editUser-editUserInfoContainer {
@@ -80,8 +75,6 @@ input {
     border-radius: 5px;
     text-align: center;
 }
-
-
 
 .editUser-editUserContainerRowTwo {
     width: 100%;
