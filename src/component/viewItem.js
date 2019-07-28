@@ -1,8 +1,8 @@
 import React, { Component} from 'react'
+import { withRouter } from "react-router-dom";
 import '../css/viewItem.css'
 
-
-export default class ViewItem extends Component {
+class ViewItem extends Component {
     constructor() {
         super()
         this.state = {
@@ -36,13 +36,10 @@ export default class ViewItem extends Component {
         return null;
     }
 
-    handleClickEditItem = (event) => {
-        let buttonData = event.target.id
-        this.props.history.push('/viewItem/', { viewItemButton: buttonData })
+    handleClickEditItem = () => {
+        let itemData = this.state
+        this.props.history.push('/editItem/', { itemData: itemData })
     }
-
-    // <button className="home-viewItemButton" id={item.id} onClick={(event) => this.handleClickViewItem(event)}>view</button>
-
 
     render() {
         return(
@@ -55,7 +52,7 @@ export default class ViewItem extends Component {
                         <div className="viewItem-viewItemContainerRowOne">
                             <div className="viewItem-viewItemNameContainer">
                                 <label htmlFor="viewItem-viewItemName">item name</label>
-                                <input className="viewItem-viewItemName" type="text" value={this.state.name} onChange={this.handleEditUser}></input>
+                                <input className="viewItem-viewItemName" type="text" value={this.state.name} onClick={this.handleClickEditItem}></input>
                             </div>
                             <div className="viewItem-qrCodeContainer">
                                 <img className="viewItem-qrcode" src={this.state.qrCode}/>
@@ -65,19 +62,19 @@ export default class ViewItem extends Component {
                             <div className="viewItem-viewCommsOptionContainer">
                                 <div className="viewItem-viewTitleContainer">
                                     <label htmlFor="viewItem-viewPhoneComms">phone</label>
-                                    <input className="viewItem-viewPhoneComms" type="text" value={this.state.contact_methods.phone} onChange={this.handleEditUser}></input>
+                                    <input className="viewItem-viewPhoneComms" type="text" value={this.state.contact_methods.phone} onClick={this.handleClickEditItem}></input>
                                 </div>
                             </div>
                             <div className="viewItem-viewCommsOptionContainer">
                                 <div className="viewItem-viewTitleContainer">
                                     <label htmlFor="viewItem-viewTextComms">text</label>
-                                    <input className="viewItem-viewTextComms" type="text"value={this.state.contact_methods.text} onChange={this.handleEditUser}></input>
+                                    <input className="viewItem-viewTextComms" type="text"value={this.state.contact_methods.text} onClick={this.handleClickEditItem}></input>
                                 </div>
                             </div>
                             <div className="viewItem-viewCommsOptionContainer">
                                 <div className="viewItem-viewTitleContainer">
                                     <label htmlFor="viewItem-viewEmailComms">email</label>
-                                    <input className="viewItem-viewEmailComms" type="text"value={this.state.contact_methods.email} onChange={this.handleEditUser}></input>
+                                    <input className="viewItem-viewEmailComms" type="text"value={this.state.contact_methods.email} onClick={this.handleClickEditItem}></input>
                                 </div>
                             </div>
                         </div>
@@ -87,3 +84,4 @@ export default class ViewItem extends Component {
         )
     }
 }
+export default withRouter(ViewItem);

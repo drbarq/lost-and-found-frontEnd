@@ -5,7 +5,30 @@ import '../css/editItem.css'
 export default class EditItem extends Component {
     constructor() {
         super()
-        this.state = {}
+        this.state = {
+            itemNumber: '',
+        }
+    }
+
+    static getDerivedStateFromProps = (nextProps, prevState) => {
+        // debugger
+        // if (prevState.itemNumber !== nextProps.value) {
+        //     return (
+        //     nextProps.itemInfo.find(item => {
+        //         if (item.id == nextProps.value) {
+        //             return {
+        //                     itemNumber: nextProps.value,
+        //                     id: item.id,
+        //                     name: item.name,
+        //                     message: item.message,
+        //                     qrCode: item.qrCode,
+        //                     contact_forms: item.contact_forms,
+        //                     contact_methods: item.contact_methods
+        //             }
+        //         }
+        //     })
+        // )}
+        return null;
     }
 
     render() {
@@ -29,37 +52,30 @@ export default class EditItem extends Component {
                             <div className="editItem-qrCodeContainer">
                                 <img className="editItem-qrcode" src="https://i.imgur.com/SGcW4yf.png"/>
                             </div>
-
                         </div>
                         <div className="editItem-editCommsContainer">
                             <div className="editItem-editCommsOptionContainer">
                                 <div className="editItem-editTitleContainer">
                                     <label htmlFor="editItem-editPhoneComms">phone</label>
-                                    <input className="editItem-editPhoneCheck" type="checkbox"></input>
+                                    <input className="editItem-editPhoneComms" type="text"></input>
                                 </div>
-                                <input className="editItem-editPhoneComms" type="text"></input>
                             </div>
                             <div className="editItem-editCommsOptionContainer">
                                 <div className="editItem-editTitleContainer">
                                     <label htmlFor="editItem-editTextComms">text</label>
-                                    <input className="editItem-editTextCheck" type="checkbox"></input>
+                                    <input className="editItem-editTextComms" type="text"></input>
                                 </div>
-                                <input className="editItem-editTextComms" type="text"></input>
                             </div>
                             <div className="editItem-editCommsOptionContainer">
                                 <div className="editItem-editTitleContainer">
                                     <label htmlFor="editItem-editEmailComms">email</label>
-                                    <input className="editItem-editTextCheck" type="checkbox"></input>
+                                    <input className="editItem-editEmailComms" type="text"></input>
                                 </div>
-                                <input className="editItem-editEmailComms" type="text"></input>
                             </div>
-
                         </div>
-
                     </form>
                 </div>
-            </React.Fragment>
-            
+            </React.Fragment>   
         )
     }
 }

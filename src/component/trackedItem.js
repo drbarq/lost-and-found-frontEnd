@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import ItemCommRender from './ItemCommRender';
-import { Redirect } from 'react-router-dom'
 import { withRouter } from "react-router-dom";
 
 
@@ -11,7 +10,7 @@ class TrackedItem extends Component {
         let buttonData = event.target.id
         this.props.history.push('/viewItem/', { viewItemButton: buttonData })
     }
-    
+
     render () {
         return (
             this.props.items.map(item => {
