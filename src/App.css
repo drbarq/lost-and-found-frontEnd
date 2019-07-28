@@ -4,10 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* background-color: #2C4246;  */
-    /* background-color: #CC4B3E;  */
     background-color: #54837A; 
-    /* background-color: #F7F8F5;  */
 }
 
 .navBarContainer {
@@ -41,18 +38,24 @@
 .navBarButtons i {
     padding: 0.2rem 1rem;
     /* background-color: #F7F8F5; */
-    background-color: #FAF2CC; 
+    background-color: #FAF2CC;
+    color: black; 
+}
+
+.navBarButtons i:hover {
+    color: #CC4B3E; 
+}
+
+.navBarButtons i:active {
+    color: #BAC267; 
 }
 
 .logoOne img {
     height: 100px;
-    /* background-color: #F7F8F5;  */
     background-color: #FAF2CC; 
 }
 
 .logoOne {
-    /* border: 1px solid black; */
-    /* background-color: #F7F8F5; */
     background-color: #FAF2CC; 
     align-self: flex-start;
     margin-top: 2em;
@@ -69,11 +72,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: #43C4BA; */
-    /* background-color: #54837A; */
-    /* background-color: #CC4B3E;  */
     background-color: #2C4246; 
-    /* background-color: #7998EB; */
 }
 
 h5 {

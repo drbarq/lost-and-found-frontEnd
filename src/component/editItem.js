@@ -61,7 +61,7 @@ export default class EditItem extends Component {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify(newPerson)
+                body: JSON.stringify()
 
             })
         }
@@ -83,7 +83,7 @@ export default class EditItem extends Component {
                         <div className="editItem-editItemContainerRowOne">
                             <div className="editItem-editItemNameContainer">
                                 <label htmlFor="editItem-editItemName">name</label>
-                                <input className="editItem-editItemName" name="name" type="text" value={this.state.name} onChange={}></input>
+                                <input className="editItem-editItemName" name="name" type="text" value={this.state.name} ></input>
                             </div>
                             <div className="editItem-qrCodeContainer">
                                 <img className="editItem-qrcode" src={this.state.qrCode}/>
@@ -93,19 +93,19 @@ export default class EditItem extends Component {
                             <div className="editItem-editCommsOptionContainer">
                                 <div className="editItem-editTitleContainer">
                                     <label htmlFor="editItem-editPhoneComms">phone</label>
-                                    <input className="editItem-editPhoneComms" name="text" type="text" value={this.state.contact_methods.phone} onChange={}></input>
+                                    <input className="editItem-editPhoneComms" name="text" type="text" value={this.state.contact_methods.phone} ></input>
                                 </div>
                             </div>
                             <div className="editItem-editCommsOptionContainer">
                                 <div className="editItem-editTitleContainer">
                                     <label htmlFor="editItem-editTextComms">text</label>
-                                    <input className="editItem-editTextComms" type="text" value={this.state.contact_methods.text} onChange={}></input>
+                                    <input className="editItem-editTextComms" type="text" value={this.state.contact_methods.text} ></input>
                                 </div>
                             </div>
                             <div className="editItem-editCommsOptionContainer">
                                 <div className="editItem-editTitleContainer">
                                     <label htmlFor="editItem-editEmailComms">email</label>
-                                    <input className="editItem-editEmailComms" type="text" value={this.state.contact_methods.email} onChange={}></input>
+                                    <input className="editItem-editEmailComms" type="text" value={this.state.contact_methods.email} ></input>
                                 </div>
                             </div>
                         </div>
