@@ -41,7 +41,7 @@ export default class EditItem extends Component {
     }
 
     // commented this out.  will revist on monday
-        // set two state variables and compare to send out request?  
+    // set two state variables and compare to send out request?  
     editItemSubmit = () => {
         // check to see what changed
         const itemID = this.state.id
@@ -66,7 +66,6 @@ export default class EditItem extends Component {
             })
         }
     }
-
 
     render() {
         return(

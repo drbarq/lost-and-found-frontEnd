@@ -1,20 +1,16 @@
 import React, { Component } from 'react';
 import 'font-awesome/css/font-awesome.min.css'
+import './App.css';
 // import Login from './component/login'
 // import NewUser from './component/newUser'
+// import HeaderLogo from './component/headerLogo'
 import HomePage from './component/homePage'
 import NewItem from './component/newItem'
 import EditItem from './component/editItem'
 import EditUser from './component/editUser'
-import HeaderLogo from './component/headerLogo'
 import ViewUser from './component/viewUser';
 import ViewItem from './component/viewItem'
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
-
-// import react router 
-
-import './App.css';
-
 
 export default class App extends Component {
   constructor() {
@@ -97,7 +93,6 @@ export default class App extends Component {
             render={ () => <EditItem />}
             />
         </Switch>
-
       </div>
     </Router>
   )}

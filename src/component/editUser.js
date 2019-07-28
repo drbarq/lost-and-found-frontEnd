@@ -18,7 +18,6 @@ export default class EditUser extends Component {
                             <button>save account changes</button>
                             <button>delete user</button>
                         </div>
-
                     </div>
                     <form className="editUser-editUserInfoContainer" action="" method="post">
                         <div className="editUser-editUserContainerRowOne">

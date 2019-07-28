@@ -29,7 +29,6 @@ export default class ViewUser extends Component {
                             {/* <button>save account changes</button> */}
                             {/* <button>delete user</button> */}
                         </div>
-
                     </div>
                     <form className="viewUser-viewUserInfoContainer" action="" method="post">
                         <div className="viewUser-viewUserContainerRowOne">

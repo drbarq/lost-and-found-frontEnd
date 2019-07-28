@@ -22,12 +22,10 @@ export default class NewUser extends Component {
                             <input type="text" id="newUser-lastName" name="lastName"/>
                         </div>
                     </div>
-                    
                     <div className="newUser-phoneContainer">
                         <label htmlFor="newUser-hone">phone number</label>
                         <input type="text" id="newUser-phone" name="phone"/>
                     </div>
-
                     <div className="newUser-emailContainer">
                         <label htmlFor="newUser-email">email</label>
                         <input type="text" id="newUser-email" name="userEmail"/>

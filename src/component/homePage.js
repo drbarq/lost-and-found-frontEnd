@@ -31,26 +31,20 @@ export default class HomePage extends Component {
             return <Redirect to='/newItem' />
         }
 
-
         return(
-            
             <React.Fragment>
-
                 <div className="home-userHomeContainer">
                     <div className="home-accountInfo">
                         <div className="home-accountTitleContainer">
                             <p>account information</p>
                         </div>
-
                         <UserInfo userInfo={this.props.userInfo} />
-                       
                         <div className="home-trackedItemsContainer">
                             <div className="home-trackedItemsTitleContainer">
                                 <p>tracked items</p>
                             </div>
                             <TrackedItem items={this.props.items} />
                         </div>
-
                     </div>
                 </div>
             </React.Fragment>

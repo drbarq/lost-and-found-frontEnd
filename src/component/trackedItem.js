@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import ItemCommRender from './ItemCommRender';
 import { withRouter } from "react-router-dom";
 
-
-
 class TrackedItem extends Component {
 
     handleClickViewItem = (event) => {
@@ -27,6 +25,7 @@ class TrackedItem extends Component {
                     </div>
                 )}
             )
-        )}
+        )
+    }
 }
 export default withRouter(TrackedItem);

@@ -27,7 +27,6 @@ export default class NewItems extends Component {
                             <div className="newItem-qrCodeContainer">
                                 <img className="newItem-qrcode" src="https://lh3.googleusercontent.com/JhlUkFmf_qYUMEV_H-WPvG_TMB7oiSY8jqqRIkzJ_cZRe0eWYIx_x59NPMX-gMpUSRZN=s128"/>
                             </div>
-
                         </div>
                         <div className="newItem-newCommsContainer">
                             <div className="newItem-newCommsOptionContainer">

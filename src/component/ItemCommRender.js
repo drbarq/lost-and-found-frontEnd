@@ -2,7 +2,6 @@ import React from 'react'
 
 export default function ItemCommRender(props) {
 
-
     return(
         <div className="home-commPrefContainer">
             <div className="home-phoneCheckBox">

@@ -13,7 +13,6 @@ export default class Login extends Component {
         return(
             <React.Fragment>
                 {/* <HeaderLogo /> */}
-
                 <form className="login-loginForm" action="/homepage/" method="get">
                     <div className="login-email">
                         <label htmlFor="login-email">email</label>
@@ -27,9 +26,7 @@ export default class Login extends Component {
                     {/* <link to="/homepage"></link> */}
                     {/* <button type="button">login</button> */}
                 </form>
-
             </React.Fragment>
-            
         )
     }
 }
