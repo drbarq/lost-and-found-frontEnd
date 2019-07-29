@@ -54,18 +54,6 @@ export default class FoundItemPortal extends Component {
         .catch(error => console.error(error.message))
     }
 
-    // handleSubmit = (event) => {
-    //     event.preventDefault()
-    //     let message = {
-    //         findee_message: `Name: ${this.state.findeeName}  Number: ${this.state.findeePhoneNumber} Message: ${this.state.findeeMessage}`,
-    //         item_id: this.state.id,
-    //             }
-
-    //     debugger;
-    //     this.openModalHandler()
- 
-    // }
-
     openModalHandler = () => {
         this.setState({
             isShowing: true
@@ -106,6 +94,7 @@ export default class FoundItemPortal extends Component {
                     </div>
                 </div>
                 <div className="foundItem-foundItemContainerRowTwo">
+                    <h3>Use the form to send a message to the owner</h3>
                     <form className="foundItem-foundItemFindeeMessageForm" onSubmit={(event) => this.handleSubmit(event)}>
 
                         <textarea className="findeeMessageBoxName"
@@ -118,7 +107,6 @@ export default class FoundItemPortal extends Component {
                                     cols = "15"
                                     onChange={(event) => this.handleTextMessage(event)}
                                     ></textarea>
-
                         <textarea className="findeeMessageBoxNumber"
                                     name="findeePhoneNumber"
                                     required
@@ -128,7 +116,6 @@ export default class FoundItemPortal extends Component {
                                     cols = "15"
                                     onChange={(event) => this.handleTextMessage(event)}
                                     ></textarea>
-
                         <textarea className="findeeMessageBox"
                                     name="findeeMessage"
                                     required

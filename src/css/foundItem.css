@@ -76,7 +76,6 @@ h5 {
     color: #FAF2CC;
     resize: none;
     font: bold;
-    
 }
 .findeeMessageBoxName, .findeeMessageBoxNumber {
     margin-bottom: .5em;
@@ -88,12 +87,19 @@ h5 {
 .foundItem-foundItemContainerRowTwo {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     padding: 0.2rem 0.2rem;
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+.foundItem-foundItemContainerRowTwo h3 {
+    color: #FAF2CC;
+    border-bottom: 1px solid #BAC267;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 .foundItem-foundItemFindeeMessageForm {
@@ -107,5 +113,7 @@ h5 {
     color: #CC4B3E;
     align-self: center;
 }
+
+
 
 
