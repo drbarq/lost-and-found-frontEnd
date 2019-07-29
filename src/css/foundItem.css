@@ -61,25 +61,28 @@
     justify-content: space-between;
 }
 
-/* .foundItem-itemNameState, .foundItem-lastName, .foundItem-viewTitleContainer { */
-    /* display: flex; */
-    /* flex-direction: column; */
-/* }  */
-
 .foundItem-itemNameState {
     display: flex;
     flex-direction: column;
 } 
-
 
 h5 {
     margin-top: .5em;
 }
 
 .findeeMessageBox {
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
+    /* margin-top: .5em; */
+    color: #FAF2CC;
+    resize: none;
+    font: bold;
+    
+}
+.findeeMessageBoxName, .findeeMessageBoxNumber {
+    margin-bottom: .5em;
     margin-top: .5em;
     color: #FAF2CC;
+    resize: none;
 }
 
 .foundItem-foundItemContainerRowTwo {
