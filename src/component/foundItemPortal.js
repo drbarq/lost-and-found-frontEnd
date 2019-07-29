@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import 'font-awesome/css/font-awesome.min.css'
 import Modal from './Modal/modal';
 import ReactDOM from "react-dom";
 import '../css/foundItem.css'
@@ -12,6 +13,8 @@ export default class FoundItemPortal extends Component {
         this.state = {
             foundItemNum: '',
             findeeMessage: '',
+            findeePhoneNumber: '',
+            findeeName: '',
             isShowing: false
         }
     }
@@ -31,40 +34,37 @@ export default class FoundItemPortal extends Component {
             .catch(error => console.error(error))
     }
 
-    // handleSubmit = (event) => {
-    //     event.preventDefault()
-    //     let postItemURL = `https://stark-plateau-81274.herokuapp.com/contact_forms`
-
-    //     let message = {
-    //         findee_message: this.state.findeeMessage,
-    //         item_id: this.state.id
-
-    //     }
-
-    //     fetch(postItemURL, {
-    //         method: "POST",
-    //         headers: {
-    //             "Content-Type": "application/json",
-    //         },
-    //         body: JSON.stringify(message)
-    //     })
-    //     .then(response => console.log(response))
-    //     .then(response => this.openModalHandler())
-    //     .catch(error => console.error(error.message))
-    // }
-
     handleSubmit = (event) => {
         event.preventDefault()
+        let postItemURL = `https://stark-plateau-81274.herokuapp.com/contact_forms`
         let message = {
-            findee_message: this.state.findeeMessage,
+            findee_message: `Name: ${this.state.findeeName}  Number: ${this.state.findeePhoneNumber} Message: ${this.state.findeeMessage}`,
             item_id: this.state.id,
-
                 }
 
-
-        this.openModalHandler()
- 
+        fetch(postItemURL, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(message)
+        })
+        .then(response => console.log(response))
+        .then(response => this.openModalHandler())
+        .catch(error => console.error(error.message))
     }
+
+    // handleSubmit = (event) => {
+    //     event.preventDefault()
+    //     let message = {
+    //         findee_message: `Name: ${this.state.findeeName}  Number: ${this.state.findeePhoneNumber} Message: ${this.state.findeeMessage}`,
+    //         item_id: this.state.id,
+    //             }
+
+    //     debugger;
+    //     this.openModalHandler()
+ 
+    // }
 
     openModalHandler = () => {
         this.setState({
@@ -80,7 +80,7 @@ export default class FoundItemPortal extends Component {
 
     handleTextMessage = event => {
         this.setState({
-            findeeMessage: event.target.value
+            [event.target.name]: event.target.value
         })
     }
 
@@ -109,6 +109,8 @@ export default class FoundItemPortal extends Component {
                     <form className="foundItem-foundItemFindeeMessageForm" onSubmit={(event) => this.handleSubmit(event)}>
 
                         <textarea className="findeeMessageBoxName"
+                                    name="findeeName"
+                                    required
                                     placeholder="enter your name"
                                     autoFocus = {true}
                                     rows = "1"
@@ -118,6 +120,8 @@ export default class FoundItemPortal extends Component {
                                     ></textarea>
 
                         <textarea className="findeeMessageBoxNumber"
+                                    name="findeePhoneNumber"
+                                    required
                                     placeholder="enter your phone number"
                                     rows = "1"
                                     maxLength = "10"
@@ -126,13 +130,15 @@ export default class FoundItemPortal extends Component {
                                     ></textarea>
 
                         <textarea className="findeeMessageBox"
-                                    placeholder="enter message to owner here"
+                                    name="findeeMessage"
+                                    required
+                                    placeholder="enter message to owner"
                                     rows = "3"
-                                    maxLength = "100"
+                                    maxLength = "60"
                                     cols = "25"
                                     onChange={(event) => this.handleTextMessage(event)}
                                     ></textarea>
-                        <input type="submit" value="send text to owner"/>
+                        <input type="submit" value="send text message"/>
                     </form>
                 </div>
             </div>

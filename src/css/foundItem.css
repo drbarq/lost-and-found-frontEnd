@@ -72,7 +72,7 @@ h5 {
 
 .findeeMessageBox {
     /* margin-bottom: 1em; */
-    /* margin-top: .5em; */
+    margin-top: .5em;
     color: #FAF2CC;
     resize: none;
     font: bold;
@@ -103,9 +103,9 @@ h5 {
 }
 
 .foundItem-foundItemFindeeMessageForm input {
-    width: 50%;
+    background: #FAF2CC;
+    color: #CC4B3E;
     align-self: center;
 }
-
 
 
