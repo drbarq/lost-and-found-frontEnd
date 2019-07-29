@@ -9,28 +9,22 @@ export default class FoundItemPortal extends Component {
         }
     }
 
-
-    static getDerivedStateFromProps = (nextProps, prevState) => {
-
-        if (prevState.foundItemNum !== nextProps.foundItemNum) {
-            debugger
-            const urlItem = `https://stark-plateau-81274.herokuapp.com/items/${nextProps.foundItemNum}`
-            
-            fetch(urlItem)
-                .then(response => response.json())
-                .then(result => this.setState(result))
-                .catch(error => console.error(error))
-            return console.log("Hello")
-        }
-        return null;
-    }
-
-    printIT =() => {
-        console.log(this.props.match.params.itemID)
+    componentDidMount = () => {
+        const urlItem = `https://stark-plateau-81274.herokuapp.com/items/${this.props.foundItemNum}`
+        fetch(urlItem)
+            .then(response => response.json())
+            .then(result => this.setState({
+                id: result.id,
+                item_name: result.item_name,
+                message: result.message,
+                qr_code: result.qr_code,
+                user_id: result.user_id
+                })
+            )
+            .catch(error => console.error(error))
     }
 
     render() {
-        // {this.printIT()}
         return (
             
             <h1>Hello</h1>
