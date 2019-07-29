@@ -11,6 +11,7 @@ import EditUser from './component/editUser'
 import ViewUser from './component/viewUser';
 import ViewItem from './component/viewItem'
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import FoundItemPortal from './component/foundItemPortal';
 
 export default class App extends Component {
   constructor() {
@@ -92,6 +93,10 @@ export default class App extends Component {
             path="/editItem/"
             render={ () => <EditItem />}
             />
+          <Route 
+            path="/foundIt/:itemID"
+            render={ (props) => <FoundItemPortal  foundItemNum={props.match.params.itemID} />}
+          />
         </Switch>
       </div>
     </Router>

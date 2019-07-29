@@ -55,7 +55,8 @@ class ViewItem extends Component {
                                 <input className="viewItem-viewItemName" type="text" value={this.state.name} onClick={this.handleClickEditItem}></input>
                             </div>
                             <div className="viewItem-qrCodeContainer">
-                                <img className="viewItem-qrcode" src={this.state.qrCode}/>
+                                {/* <img className="viewItem-qrcode" src={this.state.qrCode}/> */}
+                                <img className="viewItem-qrcode" src="https://i.imgur.com/XbBO7UG.png"/>
                             </div>
                         </div>
                         <div className="viewItem-viewCommsContainer">
