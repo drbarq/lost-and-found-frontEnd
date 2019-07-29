@@ -39,7 +39,8 @@
     padding: 0.2rem 1rem;
     /* background-color: #F7F8F5; */
     background-color: #FAF2CC;
-    color: #CC4B3E; 
+    /* color: #CC4B3E;  */
+    color: #2C4246; 
 }
 
 .navBarButtons i:hover {
@@ -47,7 +48,7 @@
 }
 
 .navBarButtons i:active {
-    color: #FAF2CC; 
+    color: #CC4B3E; 
 }
 
 .logoOne img {
