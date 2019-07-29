@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '../css/foundItem.css'
+import { tsConstructorType } from '@babel/types';
 
 
 export default class FoundItemPortal extends Component {
@@ -7,12 +8,13 @@ export default class FoundItemPortal extends Component {
     constructor () {
         super()
         this.state = {
-            foundItemNum: ''
+            foundItemNum: '',
+            findeeMessage: ''
         }
     }
 
     componentDidMount = () => {
-        const urlItem = `https://stark-plateau-81274.herokuapp.com/items/${this.props.foundItemNum}`
+        let urlItem = `https://stark-plateau-81274.herokuapp.com/items/${this.props.foundItemNum}`
         fetch(urlItem)
             .then(response => response.json())
             .then(result => this.setState({
@@ -26,8 +28,37 @@ export default class FoundItemPortal extends Component {
             .catch(error => console.error(error))
     }
 
-    handleSubmit = () => {
+    handleSubmit = (event) => {
+        event.preventDefault()
+        let postItemURL = `https://stark-plateau-81274.herokuapp.com/contact_forms`
 
+        let message = {
+            findee_message: this.state.findeeMessage,
+            item_id: this.state.id
+
+        }
+
+        // debugger 
+        fetch(postItemURL, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(message)
+        })
+        .then(response => console.log(response))
+        .catch(error => console.error(error.message))
+    
+
+        // debugger
+    }
+
+    
+
+    handleTextMessage = event => {
+        this.setState({
+            findeeMessage: event.target.value
+        })
     }
 
     render() {
@@ -49,17 +80,17 @@ export default class FoundItemPortal extends Component {
                     </div>
                 </div>
                 <div className="foundItem-foundItemContainerRowTwo">
-                    <div className="foundItem-foundItemFindeeMessageContainer">
-                        <form clasName="foundItemFindeeMessage" onSubmit={this.handleSubmit}>
+                        <form className="foundItem-foundItemFindeeMessageForm" onSubmit={(event) => this.handleSubmit(event)}>
                             <label htmlFor="findeeMessageBox">enter message to owner here</label>
                             <textarea className="findeeMessageBox"
-                                        autofocus = "true"
+                                        autoFocus = {true}
                                         rows = "3"
-                                        maxlength = "160"
-                                        cols = "35">Your text here
-                            </textarea>
+                                        maxLength = "160"
+                                        cols = "35"
+                                        onChange={(event) => this.handleTextMessage(event)}
+                                        ></textarea>
+                            <input type="submit" value="send text to owner"/>
                         </form>
-                    </div>
                 </div>
             </div>
      
@@ -68,11 +99,4 @@ export default class FoundItemPortal extends Component {
 }
 
 
-{/* <div className="foundItem-viewFindeeMessage"> */}
-{/* <label htmlFor="foundItem-foundItemPhone">phone</label> */}
-{/* <input className="foundItem-foundItemPhone" type="text" defaultValue={this.props.userInfo.contactNumber} onClick={this.handleEditUserClick}></input>  */}
-// </div>
-{/* <div className="foundItem-viewTitleContainer"> */}
-{/* <label htmlFor="foundItem-foundItemEmail">email</label> */}
-{/* <input className="foundItem-foundItemEmail" type="text" defaultValue={this.props.userInfo.emailAddress} onClick={this.handleEditUserClick}></input> */}
-// </div> 
+
