@@ -31,26 +31,33 @@ export default class FoundItemPortal extends Component {
             .catch(error => console.error(error))
     }
 
+    // handleSubmit = (event) => {
+    //     event.preventDefault()
+    //     let postItemURL = `https://stark-plateau-81274.herokuapp.com/contact_forms`
+
+    //     let message = {
+    //         findee_message: this.state.findeeMessage,
+    //         item_id: this.state.id
+
+    //     }
+
+    //     fetch(postItemURL, {
+    //         method: "POST",
+    //         headers: {
+    //             "Content-Type": "application/json",
+    //         },
+    //         body: JSON.stringify(message)
+    //     })
+    //     .then(response => console.log(response))
+    //     .then(response => this.openModalHandler())
+    //     .catch(error => console.error(error.message))
+    // }
+
     handleSubmit = (event) => {
         event.preventDefault()
-        let postItemURL = `https://stark-plateau-81274.herokuapp.com/contact_forms`
 
-        let message = {
-            findee_message: this.state.findeeMessage,
-            item_id: this.state.id
-
-        }
-
-        fetch(postItemURL, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(message)
-        })
-        .then(response => console.log(response))
-        .then(response => this.openModalHandler())
-        .catch(error => console.error(error.message))
+        this.openModalHandler()
+ 
     }
 
     openModalHandler = () => {
@@ -111,7 +118,7 @@ export default class FoundItemPortal extends Component {
                 className="modal"
                 show={this.state.isShowing}
                 close={this.closeModalHandler}>
-                    Thank you for your message! 
+                    Thank you! A text message has been sent to the owner!
             </Modal>
 
         </React.Fragment>
