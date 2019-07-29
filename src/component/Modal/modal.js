@@ -7,7 +7,7 @@ const modal = (props) => {
         <React.Fragment>
             <div className="modal-wrapper"
                 style={{
-                    transform: props.show ? 'translateY(-50vh)' : 'translateY(50vh)',
+                    transform: props.show ? 'translateY(-40vh)' : 'translateY(50vh)',
                     opacity: props.show ? '1' : '0'
                 }}>
                 <div className="modal-header">

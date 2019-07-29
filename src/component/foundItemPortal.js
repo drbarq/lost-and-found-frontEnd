@@ -40,7 +40,7 @@ export default class FoundItemPortal extends Component {
             item_id: this.state.id
 
         }
-        
+
         fetch(postItemURL, {
             method: "POST",
             headers: {
@@ -49,6 +49,7 @@ export default class FoundItemPortal extends Component {
             body: JSON.stringify(message)
         })
         .then(response => console.log(response))
+        .then(response => this.openModalHandler())
         .catch(error => console.error(error.message))
     }
 
@@ -64,12 +65,6 @@ export default class FoundItemPortal extends Component {
         });
     }
 
-    shareResponse = (response) => {
-
-    }
-
-
-
     handleTextMessage = event => {
         this.setState({
             findeeMessage: event.target.value
@@ -80,7 +75,6 @@ export default class FoundItemPortal extends Component {
         return (
             <React.Fragment>
                 { this.state.isShowing ? <div onClick={this.closeModalHandler} className="back-drop"></div> : null }
-                <button className="open-modal-btn" onClick={this.openModalHandler}>Open Modal</button>
             
             <div className="foundItem-foundItemInfoContainer">
                 <div className="foundItem-thanksContainer">
@@ -99,21 +93,19 @@ export default class FoundItemPortal extends Component {
                     </div>
                 </div>
                 <div className="foundItem-foundItemContainerRowTwo">
-                        <form className="foundItem-foundItemFindeeMessageForm" onSubmit={(event) => this.handleSubmit(event)}>
-                            <label htmlFor="findeeMessageBox">enter message to owner here</label>
-                            <textarea className="findeeMessageBox"
-                                        autoFocus = {true}
-                                        rows = "3"
-                                        maxLength = "160"
-                                        cols = "35"
-                                        onChange={(event) => this.handleTextMessage(event)}
-                                        ></textarea>
-                            <input type="submit" value="send text to owner"/>
-                        </form>
+                    <form className="foundItem-foundItemFindeeMessageForm" onSubmit={(event) => this.handleSubmit(event)}>
+                        <label htmlFor="findeeMessageBox">enter message to owner here</label>
+                        <textarea className="findeeMessageBox"
+                                    autoFocus = {true}
+                                    rows = "3"
+                                    maxLength = "160"
+                                    cols = "35"
+                                    onChange={(event) => this.handleTextMessage(event)}
+                                    ></textarea>
+                        <input type="submit" value="send text to owner"/>
+                    </form>
                 </div>
             </div>
-
-
 
             <Modal
                 className="modal"
@@ -121,7 +113,6 @@ export default class FoundItemPortal extends Component {
                 close={this.closeModalHandler}>
                     Thank you for your message! 
             </Modal>
-
 
         </React.Fragment>
         )
