@@ -21,11 +21,16 @@
 }
 
 .foundItem-thanksContainer {
+    border-bottom: 1px solid #BAC267;
+    width: 100%;
     display: flex;
+    padding: 0.2rem 0.2rem;
     display: row;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: flex-end;
+    justify-content: space-between; 
     margin-top: 1em;
-    border-radius: 25px;
+    border-radius: 25px 25px 0px 0px;
 }
 
 .foundItem-foundItemTitleContainer {
@@ -38,15 +43,6 @@
     justify-content: space-between; 
     margin-top: 1em;
 }
-
-/* .foundItem-foundItemInfoContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-    padding: 0.2rem 0.2rem;
-    align-items: flex-start;
-    border-radius: 25px;
-} */
 
 .foundItem-foundItemContainerRowOne {
     display: flex;
@@ -65,17 +61,25 @@
     justify-content: space-between;
 }
 
-.foundItem-itemNameState, .foundItem-lastName, .foundItem-viewTitleContainer {
+/* .foundItem-itemNameState, .foundItem-lastName, .foundItem-viewTitleContainer { */
+    /* display: flex; */
+    /* flex-direction: column; */
+/* }  */
+
+.foundItem-itemNameState {
     display: flex;
     flex-direction: column;
 } 
 
-h3 {
+
+h5 {
     margin-top: .5em;
-    color: #BAC267;
-    font-weight: bold;
-    border-radius: 5px;
-    text-align: center;
+}
+
+.findeeMessageBox {
+    margin-bottom: 1em;
+    margin-top: .5em;
+    color: #FAF2CC;
 }
 
 .foundItem-foundItemContainerRowTwo {

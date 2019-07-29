@@ -55,6 +55,12 @@ export default class FoundItemPortal extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
+        let message = {
+            findee_message: this.state.findeeMessage,
+            item_id: this.state.id,
+
+                }
+
 
         this.openModalHandler()
  
@@ -85,17 +91,17 @@ export default class FoundItemPortal extends Component {
             
             <div className="foundItem-foundItemInfoContainer">
                 <div className="foundItem-thanksContainer">
-                    <h3>I found an Item Portal</h3>
+                    <p>i found an item portal</p>
                 </div>
                 <div className="foundItem-foundItemContainerRowOne">
                     <div className="foundItem-viewNameandMessage">
                         <div className="foundItem-itemName">
                             <label htmlFor="foundItem-itemNameState">item name</label>
-                            <h3 className="foundItem-itemNameState">{this.state.item_name}</h3>
+                            <h5 className="foundItem-itemNameState">{this.state.item_name}</h5>
                         </div>
                         <div className="foundItem-itemMessage">
                             <label htmlFor="foundItem-itemMessageState">message from owner</label>
-                            <h3 className="foundItem-itemMessageState">{this.state.message}</h3>
+                            <h5 className="foundItem-itemMessageState">{this.state.message}</h5>
                         </div>
                     </div>
                 </div>
@@ -105,8 +111,8 @@ export default class FoundItemPortal extends Component {
                         <textarea className="findeeMessageBox"
                                     autoFocus = {true}
                                     rows = "3"
-                                    maxLength = "160"
-                                    cols = "35"
+                                    maxLength = "100"
+                                    cols = "25"
                                     onChange={(event) => this.handleTextMessage(event)}
                                     ></textarea>
                         <input type="submit" value="send text to owner"/>
