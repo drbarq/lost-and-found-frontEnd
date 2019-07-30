@@ -57,7 +57,7 @@
     align-self: center;
 }
 
-.viewItem-viewCommsContainer{
+.viewItem-viewCommsContainer {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -99,8 +99,7 @@ input {
 }
 
 .viewItem-viewPhoneComms, .viewItem-viewEmailComms {
-    color: #FAF2CC;
-    
+    color: #CC4B3E;
 }
 
 

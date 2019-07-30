@@ -1,5 +1,7 @@
 import React, { Component} from 'react'
 import '../css/editItem.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import ModalSoon from './Modal/modalComingSoon';
 
 const itemBaseURL = "https://stark-plateau-81274.herokuapp.com/items/"
 
@@ -8,7 +10,8 @@ export default class EditItem extends Component {
         super()
         this.state = {
             itemNumber: '',
-            newName: ''
+            newName: '',
+            isShowing: false
         }
     }
 
@@ -27,6 +30,18 @@ export default class EditItem extends Component {
             }
         )}
         return null;
+    }
+
+    openModalHandler = () => {
+        this.setState({
+            isShowing: true
+        });
+    }
+
+    closeModalHandler = () => {
+        this.setState({
+            isShowing: false
+        });
     }
 
     handleEditNameChange = (event) => {
@@ -70,12 +85,13 @@ export default class EditItem extends Component {
     render() {
         return(
             <React.Fragment>
+                { this.state.isShowing ? <div onClick={this.closeModalHandler} className="back-drop"></div> : null }
                 <div className="editItem-editItemContainer">
                     <div className="editItem-editItemTitleContainer">
                         <p>edit item</p>
                         <div className="editItem-buttonsContainer">
-                            <button onClick={this.editItemSubmit}>save changes</button>
-                            <button>delete item</button>
+                            <FontAwesomeIcon color="#2C4246" icon={['fas', 'save']} size="lg"/>
+                            <FontAwesomeIcon color="#2C4246" icon={['fas', 'trash']} size="lg" />
                         </div>
                     </div>
                     <form className="editItem-editItemInfoContainer" action="" method="post">
@@ -83,6 +99,10 @@ export default class EditItem extends Component {
                             <div className="editItem-editItemNameContainer">
                                 <label htmlFor="editItem-editItemName">name</label>
                                 <input className="editItem-editItemName" name="name" type="text" value={this.state.name} ></input>
+                            </div>
+                            <div className="editItem-editItemMessageContainer">
+                                <label htmlFor="editItem-editItemMessage">findee message</label>
+                                <textarea className="editItem-editItemMessage" rows = "3" cols = "30" value={this.state.message}></textarea>
                             </div>
                             <div className="editItem-qrCodeContainer">
                                 <img className="editItem-qrcode" src={this.state.qrCode}/>
@@ -92,7 +112,7 @@ export default class EditItem extends Component {
                             <div className="editItem-editCommsOptionContainer">
                                 <div className="editItem-editTitleContainer">
                                     <label htmlFor="editItem-editPhoneComms">phone</label>
-                                    <input className="editItem-editPhoneComms" name="text" type="text" value={this.state.contact_methods.phone} ></input>
+                                    <input className="editItem-editPhoneComms" name="text" type="text" value="disabled" ></input>
                                 </div>
                             </div>
                             <div className="editItem-editCommsOptionContainer">
@@ -104,7 +124,7 @@ export default class EditItem extends Component {
                             <div className="editItem-editCommsOptionContainer">
                                 <div className="editItem-editTitleContainer">
                                     <label htmlFor="editItem-editEmailComms">email</label>
-                                    <input className="editItem-editEmailComms" type="text" value={this.state.contact_methods.email} ></input>
+                                    <input className="editItem-editEmailComms" type="text" value="disabled"  ></input>
                                 </div>
                             </div>
                         </div>

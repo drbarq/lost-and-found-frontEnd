@@ -72,7 +72,7 @@ export default class App extends Component {
                 <div className="navBarButtons">
                     <Link className="navbar-home-button" to="/"><i className="fa fa-home fa-2x"></i></Link>
                     <Link className="navbar-user-button" to="/accountInformation/"><i className="fa fa-user fa-2x"></i></Link>
-                    <Link className="navbar-user-button" to="/newItem/"><i className="fa fa-plus-circle fa-2x"></i></Link>
+                    {/* <Link className="navbar-user-button" to="/newItem/"><i className="fa fa-plus-circle fa-2x"></i></Link> */}
                 </div>
             </div>
           </div>
