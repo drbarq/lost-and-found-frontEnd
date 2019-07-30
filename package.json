@@ -45,5 +45,6 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.9.0"
-  }
+  },
+  "homepage" : "https://tustinlostandfound.firebaseapp.com/"
 }
