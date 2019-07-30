@@ -6,7 +6,7 @@ class ViewItem extends Component {
     constructor() {
         super()
         this.state = {
-            itemNumber: '',
+            itemNumber: 0,
             id: '',
             name: '',
             message: '',
