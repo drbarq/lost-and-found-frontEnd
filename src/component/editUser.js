@@ -1,6 +1,6 @@
 import React, { Component} from 'react'
 import '../css/editUser.css'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default class EditUser extends Component {
     constructor() {
@@ -15,8 +15,10 @@ export default class EditUser extends Component {
                     <div className="editUser-editUserTitleContainer">
                         <p>edit account information</p>
                         <div className="editUser-buttonsContainer">
-                            <button>save account changes</button>
-                            <button>delete user</button>
+                            <FontAwesomeIcon color="#2C4246" icon={['fas', 'save']} size="lg"/>
+                            <FontAwesomeIcon color="#2C4246" icon={['fas', 'trash']} size="lg" />
+                            {/* <button>save account changes</button> */}
+                            {/* <button>delete user</button> */}
                         </div>
                     </div>
                     <form className="editUser-editUserInfoContainer" action="" method="post">

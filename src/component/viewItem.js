@@ -20,7 +20,7 @@ class ViewItem extends Component {
         if (prevState.itemNumber !== nextProps.value) {
             return (
             nextProps.itemInfo.find(item => {
-                if (item.id == nextProps.value) {
+                if (item.id === nextProps.value) {
                     return {
                             itemNumber: nextProps.value,
                             id: item.id,

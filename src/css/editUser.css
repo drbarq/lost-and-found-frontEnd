@@ -95,4 +95,22 @@ input {
     justify-content: space-between;
 }
 
+.editUser-buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 2em;
+}
+
+.editUser-buttonsContainer svg {
+    margin-right: 2em;
+}
+
+.editUser-buttonsContainer svg:hover {
+    color: #BAC267; 
+}
+
+.editUser-buttonsContainer svg:active {
+    color: #CC4B3E; 
+}
 
