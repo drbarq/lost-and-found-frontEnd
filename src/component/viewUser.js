@@ -47,7 +47,6 @@ export default class ViewUser extends Component {
                                     <label htmlFor="viewUser-viewUserEmail">email</label>
                                     <input className="viewUser-viewUserEmail" type="text" defaultValue={this.props.userInfo.emailAddress} onClick={this.handleEditUserClick}></input>
                                 </div>
-                                
                             </div>
                         </div>
                     </form>
