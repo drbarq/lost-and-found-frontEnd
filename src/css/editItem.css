@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 2em;
+    margin-bottom: 2em;
     padding: 0.2rem 0.2rem;
     border-radius: 25px;
 }
@@ -56,6 +57,7 @@
     justify-content: space-between;
     padding: 0.2rem 0.2rem;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .editItem-editItemNameContainer {
@@ -113,6 +115,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin-right: 2em;
+    margin-top: 1em;
 }
 
 .editItem-editPhoneComms, .editItem-editEmailComms {
