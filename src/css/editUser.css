@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap');
+
 .editUser-editUserContainer {
     border: 1px solid #CC4B3E;
     width: 85%;
     display: flex;
     flex-direction: column;
     margin-top: 2em;
+    margin-bottom: 2em;
     padding: 0.2rem 0.2rem;
     border-radius: 25px;
 }
@@ -12,6 +14,8 @@
 .editUser-editUserContainer label {
     font-size: 12px;
     color: #FAF2CC;
+    border-bottom: 1px solid #BAC267;
+    margin-bottom: .5em;
 }
 
 .editUser-editUserContainer p {
@@ -33,9 +37,6 @@
 .editUser-buttonsContainer {
     width: 50%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
 }
 
 .editUser-editUserInfoContainer {
@@ -60,9 +61,10 @@
 .editUser-editNameContainer {
     width: 65%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
+
 .editUser-firstName, .editUser-lastName, .editUser-editTitleContainer {
     display: flex;
     flex-direction: column;
@@ -90,8 +92,19 @@ input {
 .editUser-editUserCommOptionContainer {
     width: 65%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
+.editUser-buttonsContainer svg {
+    margin-right: 2em;
+}
+
+.editUser-buttonsContainer svg:hover {
+    color: #BAC267; 
+}
+
+.editUser-buttonsContainer svg:active {
+    color: #CC4B3E; 
+}
 

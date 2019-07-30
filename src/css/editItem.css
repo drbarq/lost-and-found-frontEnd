@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 2em;
+    margin-bottom: 2em;
     padding: 0.2rem 0.2rem;
     border-radius: 25px;
 }
@@ -35,7 +36,7 @@
     width: 50%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
 }
 
@@ -56,13 +57,14 @@
     justify-content: space-between;
     padding: 0.2rem 0.2rem;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .editItem-editItemNameContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* padding: 0.2rem 0.2rem; */
+    align-self: center;
 }
 
 .editItem-editCommsContainer {
@@ -86,6 +88,38 @@
     padding: 0.2rem 0.2rem;
 }
 
+.editItem-buttonsContainer svg {
+    margin-right: 2em;
+}
+
+.editItem-buttonsContainer svg:hover {
+    color: #BAC267; 
+}
+
+.editItem-buttonsContainer svg:active {
+    color: #CC4B3E; 
+}
+
+.editItem-editItemMessage {
+    margin-top: .5em;
+    color: #BAC267;
+    resize: none;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.editItem-editItemMessageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 2em;
+    margin-top: 1em;
+}
+
+.editItem-editPhoneComms, .editItem-editEmailComms {
+    color: #CC4B3E;
+}
 
 
 

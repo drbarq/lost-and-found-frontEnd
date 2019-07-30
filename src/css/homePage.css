@@ -1,31 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap');
 
 .home-userHomeContainer {
-    /* border: 1px dashed black; */
     border: 1px solid #CC4B3E;
     width: 85%;
     display: flex;
     flex-direction: column;
     margin-top: 2em;
+    margin-bottom: 2em;
     padding: 0.2rem 0.2rem;
     border-radius: 25px;
 }
 
 button {
     background-color: #FAF2CC; 
-    /* pointer-events: auto; */
 }
 
 .home-userHomeContainer label {
     font-size: 12px;
-    /* color: #757575; */
     color: #FAF2CC;
 }
 
 .home-userHomeContainer p {
     font-size: 12px;
     color: #FAF2CC;
-    /* color: #CC4B3E; */
 }
 
 .home-accountInfo {
@@ -39,7 +36,6 @@ button {
 }
 
 .home-accountTitleContainer {
-    /* border-bottom: 1px solid #CC4B3E; */
     border-bottom: 1px solid #BAC267;
     width: 100%;
     display: flex;
@@ -55,12 +51,11 @@ button {
     flex-direction: column;
     justify-content: space-between;
     padding: 0.2rem 0.2rem;
-    
 }
 
 .home-contact {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .home-email {
@@ -72,7 +67,6 @@ button {
 }
 
 .home-trackedItemsTitleContainer {
-    /* border-bottom: 1px solid #CC4B3E; */
     border-bottom: 1px solid #BAC267;
     width: 100%;
     display: flex;
@@ -107,27 +101,29 @@ button {
     flex-direction: row;
     width: 33%;
     justify-content: space-evenly;
-}
-
-.home-phoneCheckBox {
-    display: flex;
-    flex-direction: column;
-}
-
-.home-textCheckBox {
-    display: flex;
-    flex-direction: column;
-}
-
-.home-emailCheckBox {
-    display: flex;
-    flex-direction: column;
+    align-items: center;
 }
 
 .home-viewItemButtonContainer {
     display: flex;
     flex-direction: row;
     width: 33%;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+    color: #BAC267;
+}
+
+.home-viewItemButtonContainer button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #54837A;
+}
+
+.home-viewItemButton svg:hover{
+    color: #BAC267; 
+}
+
+.home-viewItemButton svg:active {
+    color: #CC4B3E; 
 }

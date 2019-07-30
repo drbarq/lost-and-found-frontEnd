@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
+
 import 'font-awesome/css/font-awesome.min.css'
-// import Login from './component/login'
-// import NewUser from './component/newUser'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import './App.css';
+
 import HomePage from './component/homePage'
 import NewItem from './component/newItem'
 import EditItem from './component/editItem'
 import EditUser from './component/editUser'
-import HeaderLogo from './component/headerLogo'
 import ViewUser from './component/viewUser';
 import ViewItem from './component/viewItem'
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import FoundItemPortal from './component/foundItemPortal';
 
-// import react router 
-
-import './App.css';
-
+library.add(fab, fas)
 
 export default class App extends Component {
   constructor() {
@@ -59,17 +60,16 @@ export default class App extends Component {
         <div className="app">
           <div className="navBarContainer">
             <div className="logoOne">
-                <img src="https://i.imgur.com/yU93abh.png"></img>
+                <img src="https://i.imgur.com/ICYVxch.png"></img>
             </div>
             <div className="navBar">
                 <div className="navBarButtons">
                     <Link className="navbar-home-button" to="/"><i className="fa fa-home fa-2x"></i></Link>
                     <Link className="navbar-user-button" to="/accountInformation/"><i className="fa fa-user fa-2x"></i></Link>
-                    <Link className="navbar-user-button" to="/newItem/"><i className="fa fa-plus-square fa-2x"></i></Link>
+                    {/* <Link className="navbar-user-button" to="/newItem/"><i className="fa fa-plus-circle fa-2x"></i></Link> */}
                 </div>
             </div>
           </div>
-
         <Switch>
           <Route 
             exact path="/"
@@ -96,8 +96,11 @@ export default class App extends Component {
             path="/editItem/"
             render={ () => <EditItem />}
             />
+          <Route 
+            path="/foundIt/:itemID"
+            render={ (props) => <FoundItemPortal  foundItemNum={props.match.params.itemID} />}
+          />
         </Switch>
-
       </div>
     </Router>
   )}

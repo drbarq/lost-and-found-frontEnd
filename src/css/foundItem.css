@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap');
+
+.foundItem-foundItemInfoContainer {
+    border: 1px solid #CC4B3E;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    padding: 0.2rem 0.2rem;
+    border-radius: 25px;
+}
+
+.foundItem-foundItemInfoContainer label {
+    font-size: 12px;
+    color: #FAF2CC;
+    border-bottom: 1px solid #BAC267;
+}
+
+.foundItem-foundItemInfoContainer p {
+    font-size: 12px;
+    color: #FAF2CC;
+}
+
+.foundItem-thanksContainer {
+    border-bottom: 1px solid #BAC267;
+    width: 100%;
+    display: flex;
+    padding: 0.2rem 0.2rem;
+    display: row;
+    align-items: flex-end;
+    justify-content: space-between; 
+    margin-top: 1em;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.foundItem-foundItemTitleContainer {
+    border-bottom: 1px solid #BAC267;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0.2rem 0.2rem;
+    align-items: flex-end;
+    justify-content: space-between; 
+    margin-top: 1em;
+}
+
+.foundItem-foundItemContainerRowOne {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0.2rem 0.2rem;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.foundItem-viewNameandMessage {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.foundItem-itemNameState {
+    display: flex;
+    flex-direction: column;
+} 
+
+h5 {
+    margin-top: .5em;
+}
+
+.findeeMessageBox {
+    margin-top: .5em;
+    color: #FAF2CC;
+    resize: none;
+    font: bold;
+}
+.findeeMessageBoxName, .findeeMessageBoxNumber {
+    margin-bottom: .5em;
+    margin-top: .5em;
+    color: #FAF2CC;
+    resize: none;
+}
+
+.foundItem-foundItemContainerRowTwo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem 0.2rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.foundItem-foundItemContainerRowTwo h3 {
+    color: #FAF2CC;
+    border-bottom: 1px solid #BAC267;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.foundItem-foundItemFindeeMessageForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.foundItem-foundItemFindeeMessageForm input {
+    background: #FAF2CC;
+    color: #CC4B3E;
+    align-self: center;
+}
+
+
+
+

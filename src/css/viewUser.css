@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap');
 
 .viewUser-viewUserContainer {
-    /* border: 1px dashed black; */
     border: 1px solid #CC4B3E;
     width: 85%;
     display: flex;
     flex-direction: column;
     margin-top: 2em;
+    margin-bottom: 2em;
     padding: 0.2rem 0.2rem;
     border-radius: 25px;
 }
@@ -14,6 +14,8 @@
 .viewUser-viewUserContainer label {
     font-size: 12px;
     color: #FAF2CC;
+    border-bottom: 1px solid #BAC267;
+    margin-bottom: .5em;
 }
 
 .viewUser-viewUserContainer p {
@@ -22,7 +24,6 @@
 }
 
 .viewUser-viewUserTitleContainer {
-    /* border-bottom: 1px solid black; */
     border-bottom: 1px solid #BAC267;
     width: 100%;
     display: flex;
@@ -55,9 +56,10 @@
 .viewUser-viewNameContainer {
     width: 65%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
+
 .viewUser-firstName, .viewUser-lastName, .viewUser-viewTitleContainer {
     display: flex;
     flex-direction: column;
@@ -85,7 +87,7 @@ input {
 .viewUser-viewUserCommOptionContainer {
     width: 65%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
