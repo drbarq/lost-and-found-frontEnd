@@ -55,7 +55,7 @@ class ViewItem extends Component {
                                 <input className="viewItem-viewItemName" type="text" value={this.state.name} onClick={this.handleClickEditItem}></input>
                             </div>
                             <div className="viewItem-viewItemMessageContainer">
-                                <label htmlFor="viewItem-viewItemMessage">findee message</label>
+                                <label htmlFor="viewItem-viewItemMessage">message for finder</label>
                                 <textarea className="viewItem-viewItemMessage" rows = "3" cols = "30" value={this.state.message}></textarea>
                             </div>
                             <div className="viewItem-qrCodeContainer">
