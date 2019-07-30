@@ -13,6 +13,7 @@
 .foundItem-foundItemInfoContainer label {
     font-size: 12px;
     color: #FAF2CC;
+    border-bottom: 1px solid #BAC267;
 }
 
 .foundItem-foundItemInfoContainer p {

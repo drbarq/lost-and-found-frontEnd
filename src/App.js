@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 import 'font-awesome/css/font-awesome.min.css'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+
+
+
 import './App.css';
 // import Login from './component/login'
 // import NewUser from './component/newUser'
@@ -12,6 +18,8 @@ import ViewUser from './component/viewUser';
 import ViewItem from './component/viewItem'
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import FoundItemPortal from './component/foundItemPortal';
+
+library.add(fab, fas)
 
 export default class App extends Component {
   constructor() {
@@ -28,6 +36,8 @@ export default class App extends Component {
       items: []
     }
   }
+
+  
 
   componentDidMount = () => {
     const urlUser = "https://stark-plateau-81274.herokuapp.com/users/8"
