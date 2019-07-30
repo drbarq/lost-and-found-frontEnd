@@ -58,7 +58,7 @@
 .foundItem-viewNameandMessage {
     width: 80%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 

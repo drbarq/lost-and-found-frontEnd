@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 2em;
+    margin-bottom: 2em;
     padding: 0.2rem 0.2rem;
     border-radius: 25px;
 }
@@ -13,6 +14,9 @@
 .viewUser-viewUserContainer label {
     font-size: 12px;
     color: #FAF2CC;
+    border-bottom: 1px solid #BAC267;
+    /* width: 85%; */
+    margin-bottom: .5em;
 }
 
 .viewUser-viewUserContainer p {
@@ -53,7 +57,7 @@
 .viewUser-viewNameContainer {
     width: 65%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -84,7 +88,7 @@ input {
 .viewUser-viewUserCommOptionContainer {
     width: 65%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
