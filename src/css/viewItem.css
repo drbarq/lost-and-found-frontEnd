@@ -54,6 +54,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-self: center;
 }
 
 .viewItem-viewCommsContainer{
@@ -77,6 +78,30 @@
     padding: 0.2rem 0.2rem;
 }
 
+.viewItem-viewItemMessage {
+    margin-top: .5em;
+    color: #BAC267;
+    resize: none;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.viewItem-viewItemMessageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 2em;
+}
+
+input {
+    border: none;
+}
+
+.viewItem-viewPhoneComms, .viewItem-viewEmailComms {
+    color: #FAF2CC;
+    
+}
 
 
 

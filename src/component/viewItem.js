@@ -54,6 +54,10 @@ class ViewItem extends Component {
                                 <label htmlFor="viewItem-viewItemName">item name</label>
                                 <input className="viewItem-viewItemName" type="text" value={this.state.name} onClick={this.handleClickEditItem}></input>
                             </div>
+                            <div className="viewItem-viewItemMessageContainer">
+                                <label htmlFor="viewItem-viewItemMessage">findee message</label>
+                                <textarea className="viewItem-viewItemMessage" rows = "3" cols = "30" value={this.state.message}></textarea>
+                            </div>
                             <div className="viewItem-qrCodeContainer">
                                 {/* <img className="viewItem-qrcode" src={this.state.qrCode}/> */}
                                 <img className="viewItem-qrcode" src="https://i.imgur.com/XbBO7UG.png"/>
@@ -63,7 +67,7 @@ class ViewItem extends Component {
                             <div className="viewItem-viewCommsOptionContainer">
                                 <div className="viewItem-viewTitleContainer">
                                     <label htmlFor="viewItem-viewPhoneComms">phone</label>
-                                    <input className="viewItem-viewPhoneComms" type="text" value={this.state.contact_methods.phone} onClick={this.handleClickEditItem}></input>
+                                    <input className="viewItem-viewPhoneComms" type="text" value="disabled" onClick={this.handleClickEditItem}></input>
                                 </div>
                             </div>
                             <div className="viewItem-viewCommsOptionContainer">
@@ -75,7 +79,7 @@ class ViewItem extends Component {
                             <div className="viewItem-viewCommsOptionContainer">
                                 <div className="viewItem-viewTitleContainer">
                                     <label htmlFor="viewItem-viewEmailComms">email</label>
-                                    <input className="viewItem-viewEmailComms" type="text"value={this.state.contact_methods.email} onClick={this.handleClickEditItem}></input>
+                                    <input className="viewItem-viewEmailComms" type="text"value="disabled" onClick={this.handleClickEditItem}></input>
                                 </div>
                             </div>
                         </div>
