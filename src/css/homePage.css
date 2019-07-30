@@ -9,7 +9,6 @@
     margin-bottom: 2em;
     padding: 0.2rem 0.2rem;
     border-radius: 25px;
-
 }
 
 button {
@@ -68,7 +67,6 @@ button {
 }
 
 .home-trackedItemsTitleContainer {
-    /* border-bottom: 1px solid #CC4B3E; */
     border-bottom: 1px solid #BAC267;
     width: 100%;
     display: flex;
@@ -120,10 +118,6 @@ button {
     height: 100%;
     border: none;
     background-color: #54837A;
-}
-
-.home-viewItemButton svg{
-
 }
 
 .home-viewItemButton svg:hover{

@@ -1,22 +1,18 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
+
 import 'font-awesome/css/font-awesome.min.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'
-
-
-
 import './App.css';
-// import Login from './component/login'
-// import NewUser from './component/newUser'
-// import HeaderLogo from './component/headerLogo'
+
 import HomePage from './component/homePage'
 import NewItem from './component/newItem'
 import EditItem from './component/editItem'
 import EditUser from './component/editUser'
 import ViewUser from './component/viewUser';
 import ViewItem from './component/viewItem'
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import FoundItemPortal from './component/foundItemPortal';
 
 library.add(fab, fas)
@@ -36,8 +32,6 @@ export default class App extends Component {
       items: []
     }
   }
-
-  
 
   componentDidMount = () => {
     const urlUser = "https://stark-plateau-81274.herokuapp.com/users/8"
@@ -76,7 +70,6 @@ export default class App extends Component {
                 </div>
             </div>
           </div>
-
         <Switch>
           <Route 
             exact path="/"

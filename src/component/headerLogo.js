@@ -4,7 +4,6 @@ import '../css/homePage.css'
 import { Redirect } from 'react-router-dom'
 
 export default class HeaderLogo extends Component {
-
     constructor() {
         super()
         this.state = {
@@ -16,13 +15,10 @@ export default class HeaderLogo extends Component {
         this.setState({inUserInfo: true})
     }
 
-
     render() {
         if (this.state.inUserInfo === true) {
             return <Redirect to='/accountInformation' />
         }
-
-
         return(
             <div className="navBarContainer">
                 <div className="logoOne">
@@ -38,7 +34,4 @@ export default class HeaderLogo extends Component {
             </div>
         )
     }
-
-
-
 }

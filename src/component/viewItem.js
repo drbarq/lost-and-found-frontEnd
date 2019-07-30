@@ -59,8 +59,8 @@ class ViewItem extends Component {
                                 <textarea className="viewItem-viewItemMessage" rows = "3" cols = "30" value={this.state.message}></textarea>
                             </div>
                             <div className="viewItem-qrCodeContainer">
-                                {/* <img className="viewItem-qrcode" src={this.state.qrCode}/> */}
-                                <img className="viewItem-qrcode" src="https://i.imgur.com/XbBO7UG.png"/>
+                                <img className="viewItem-qrcode" src={this.state.qrCode}/>
+                                {/* <img className="viewItem-qrcode" src="https://i.imgur.com/XbBO7UG.png"/> */}
                             </div>
                         </div>
                         <div className="viewItem-viewCommsContainer">

@@ -23,7 +23,6 @@ const modal = (props) => {
         </React.Fragment>
     )
 }
-
 export default modal;
 
 

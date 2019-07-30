@@ -1,7 +1,6 @@
 import React, { Component} from 'react'
 import '../css/newItem.css'
 
-
 export default class NewItems extends Component {
     constructor() {
         super()

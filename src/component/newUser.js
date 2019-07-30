@@ -1,7 +1,6 @@
 import React, { Component} from 'react'
 import '../css/newUser.css'
 
-
 export default class NewUser extends Component {
     constructor() {
         super()

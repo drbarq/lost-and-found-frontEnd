@@ -1,9 +1,6 @@
 import React, { Component} from 'react'
-import '../css/editItem.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import ModalSoon from './Modal/modalComingSoon';
-
-const itemBaseURL = "https://stark-plateau-81274.herokuapp.com/items/"
+import '../css/editItem.css'
 
 export default class EditItem extends Component {
     constructor() {
@@ -49,38 +46,7 @@ export default class EditItem extends Component {
             name: event.target.value,
             newName: event.target.value
         })
-    }
-
-    handleEditFieldChange = () => {
-
-    }
-
-    // commented this out.  will revist on monday
-    // set two state variables and compare to send out request?  
-    editItemSubmit = () => {
-        // check to see what changed
-        const itemID = this.state.id
-        const itemURL = itemBaseURL+itemID
-
-        const nameChange = this.state.newName.length > 0 ? true : false
-        // event.preventDefault()
-        debugger;
-        if (nameChange) {
-            // optimistically render
-            this.setState({
-                name: this.state.newName
-            })
-            // send a post update
-            fetch(itemURL, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify()
-
-            })
-        }
-    }
+    } 
 
     render() {
         return(

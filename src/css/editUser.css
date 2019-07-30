@@ -37,11 +37,6 @@
 .editUser-buttonsContainer {
     width: 50%;
     display: flex;
-    /* flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-
-    justify-content: center; */
 }
 
 .editUser-editUserInfoContainer {
@@ -69,6 +64,7 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
 .editUser-firstName, .editUser-lastName, .editUser-editTitleContainer {
     display: flex;
     flex-direction: column;
@@ -98,10 +94,6 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.editUser-buttonsContainer {
-
 }
 
 .editUser-buttonsContainer svg {

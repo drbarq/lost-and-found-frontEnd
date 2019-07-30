@@ -1,9 +1,7 @@
 import React, { Component} from 'react'
-// import { parsePhoneNumberFromString } from 'libphonenumber-js'
 import TrackedItem from './trackedItem'
 import '../css/homePage.css'
 import UserInfo from './userInfo';
-import { withRouter } from 'react-router-dom'
 import { Redirect } from 'react-router-dom'
 
 
@@ -30,7 +28,6 @@ export default class HomePage extends Component {
         } else if (this.state.inAddItem === true) {
             return <Redirect to='/newItem' />
         }
-
         return(
             <React.Fragment>
                 <div className="home-userHomeContainer">

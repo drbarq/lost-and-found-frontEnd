@@ -1,12 +1,8 @@
 import React from 'react'
-// import '../css/newItem.css'
 import '../css/homePage.css'
-// import 'font-awesome/css/font-awesome.min.css'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function ItemCommRender(props) {
-
     return(
         <div className="home-commPrefContainer">
             <div className="home-phoneCheckBox">
