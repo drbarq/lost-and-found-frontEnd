@@ -4,9 +4,9 @@ Lost and Found is an application that connects people through their lost items. 
 
 These QR codes are special though as they provide a direct line of communication between the user owner who has lost an item and the finder who has found the item.  
 
-The QR codes are technology agnostic and can be scanned with any cell phone camera without the use of additional apps.  Once scanned the landing page is unique to the item.  A message from the owner is displayed with a short form for the finder to fill out.  The fields follow a 'voice-mail' format allowing the finder to leave a short message for the owner to contact them.  
+The QR codes are technology agnostic and can be scanned with any cell phone camera without the use of additional apps. Once scanned the landing page is unique to the item.  A message from the owner is displayed with a short form for the finder to fill out.  The fields follow a 'voice-mail' format allowing the finder to leave a short message for the owner to contact them.  
 
-The platform provides a direct line of communication to between two unrelated people while maintaing a layer of privacy and anonymity for the owner and finder.
+The platform provides a direct line of communication to between two unrelated people while maintaining a layer of privacy and anonymity for the owner and finder.
 
 [Lost and Found: Backend Repo](https://github.com/drbarq/lost-and-found-backEnd-api)
 
@@ -44,7 +44,7 @@ Found Item portal on mobile
 
 <img src="https://i.imgur.com/M6DSqLJ.png?1" width="281" height="609" title="text">
 
-Text Message Recieved 
+Text Message Received 
 
 <img src="https://i.imgur.com/WvBRNJL.png" width="281" height="609" title="text">
 
