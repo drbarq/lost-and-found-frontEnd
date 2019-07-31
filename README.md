@@ -8,11 +8,11 @@ The QR codes are technology agnostic and can be scanned with any cell phone came
 
 The platform provides a direct line of communication to between two unrelated people while maintaing a layer of privacy and anonymity for the owner and finder.
 
-## Lost and Found - Hosted Solution 
+## Lost and Found - Hosted Solution on Firebase 
 
-[Lost and Found hosted on FireBase](https://tustinlostandfound.firebaseapp.com/)
+[Lost and Found - Homepage](https://tustinlostandfound.firebaseapp.com/)
 
-[Found Item Portal](https://tustinlostandfound.firebaseapp.com/foundit/36)
+[Lost and Found - Found Item Portal](https://tustinlostandfound.firebaseapp.com/foundit/36)
 
 ## Lost and Found - Build: Frontend 
 
