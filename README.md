@@ -8,7 +8,7 @@ The QR codes are technology agnostic and can be scanned with any cell phone came
 
 The platform provides a direct line of communication to between two unrelated people while maintaing a layer of privacy and anonymity for the owner and finder.
 
-[Backend Repo](https://github.com/drbarq/lost-and-found-backEnd-api)
+[Lost and Found: Backend Repo](https://github.com/drbarq/lost-and-found-backEnd-api)
 
 ## Lost and Found - Hosted Solution on Firebase 
 
