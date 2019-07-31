@@ -40,7 +40,7 @@ Found Item Portal
 
 Text Message Recieved 
 
-![alt text](https://i.imgur.com/WvBRNJL.png width="400" height="790" ) 
+![alt text](https://i.imgur.com/WvBRNJL.png){:height="700px" width="400px"} 
 
 ## Lost and Found - Run Instructions 
 
