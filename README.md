@@ -10,11 +10,9 @@ The platform provides a direct line of communication to between two unrelated pe
 
 ## Lost and Found - Hosted Solution 
 
-Homepage 
-https://tustinlostandfound.firebaseapp.com/
+[Lost and Found hosted on FireBase](https://tustinlostandfound.firebaseapp.com/)
 
-Found Item Portal
-https://tustinlostandfound.firebaseapp.com/foundit/36
+[Found Item Portal](https://tustinlostandfound.firebaseapp.com/foundit/36)
 
 ## Lost and Found - Build: Frontend 
 
@@ -25,15 +23,19 @@ The Found item portal is a landing page for the QR code associated with that ite
 ## Lost and Found - Usage 
 
 Lost and Found - Homepage and Account Page
+
 ![alt text](https://media.giphy.com/media/l0WgtXXElivKdJBCFt/giphy.gif)
 
 Lost and Found - View and Edit Item
+
 ![alt text](https://media.giphy.com/media/lPAbTQMWFhQxsgzfcH/giphy.gif)
 
 Scanning the QR code below will take you to the Found Item Portal
-![alt text] (https://i.imgur.com/eIrP67F.png)
+
+![alt text](https://i.imgur.com/eIrP67F.png)
 
 Found Item Portal
+
 ![alt text](https://media.giphy.com/media/VdhvosCPBUwOSE9yUP/giphy.gif) 
 
 
