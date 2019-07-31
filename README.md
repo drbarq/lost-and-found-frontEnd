@@ -38,6 +38,9 @@ Found Item Portal
 
 ![alt text](https://media.giphy.com/media/VdhvosCPBUwOSE9yUP/giphy.gif) 
 
+Text Message Recieved 
+
+![alt text](https://i.imgur.com/WvBRNJL.png width="400" height="790" ) 
 
 ## Lost and Found - Run Instructions 
 
