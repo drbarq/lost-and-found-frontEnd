@@ -46,13 +46,13 @@ Text Message Recieved
 
 ## Lost and Found - IRL 
 
-<img src="https://i.imgur.com/mcg7XKr.jpg">
+<img src="https://i.imgur.com/mcg7XKr.jpg" width="281" height="409">
 
-<img src="https://i.imgur.com/IGpwoK3.jpg">
+<img src="https://i.imgur.com/IGpwoK3.jpg" width="281" height="409">
 
-<img src="https://i.imgur.com/AeMMgco.jpg">
+<img src="https://i.imgur.com/AeMMgco.jpg" width="281" height="409">
 
-<img src="https://i.imgur.com/0ZKkdGK.jpg">
+<img src="https://i.imgur.com/0ZKkdGK.jpg" width="281" height="409">
 
 ## Lost and Found - Run Instructions 
 
