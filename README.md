@@ -32,7 +32,7 @@ Lost and Found - View and Edit Item
 
 Scanning the QR code below will take you to the Found Item Portal
 
-![alt text](https://i.imgur.com/eIrP67F.png)
+![alt text](https://i.imgur.com/eIrP67Fs.png)
 
 Found Item Portal
 
