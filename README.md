@@ -22,6 +22,19 @@ I wrote the front end using React and hosted it on firebase.  It is connected to
 
 The Found item portal is a landing page for the QR code associated with that item.  The form which renders is the connection to the item owner.  Go ahead and send me a text! 
 
+## Lost and Found - Usage 
+
+Lost and Found - Homepage and Account Page
+![alt text](https://media.giphy.com/media/l0WgtXXElivKdJBCFt/giphy.gif)
+
+Lost and Found - View and Edit Item
+![alt text](https://media.giphy.com/media/lPAbTQMWFhQxsgzfcH/giphy.gif)
+
+Scanning the QR code below will take you to the Found Item Portal
+![alt text] (https://i.imgur.com/eIrP67F.png)
+
+Found Item Portal
+![alt text](https://media.giphy.com/media/VdhvosCPBUwOSE9yUP/giphy.gif) 
 
 
 ## Lost and Found - Run Instructions 
