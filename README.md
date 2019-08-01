@@ -16,6 +16,13 @@ The platform provides a direct line of communication to between two unrelated pe
 
 [Lost and Found - Found Item Portal](https://tustinlostandfound.firebaseapp.com/foundit/36)
 
+## Lost and Found - Video 
+
+
+<div align="center">[![Vimeo](https://i.imgur.com/0uu6fg4.jpg)](https://vimeo.com/351468041)</div>
+
+
+
 ## Lost and Found - Build: Frontend 
 
 I wrote the front end using React and hosted it on firebase.  It is connected to my Ruby on Rails backend which is hosted on Heroku.  The homepage simulates a user who is signed in.  The account information is rendered with the users registered items.  Clicking on the individual field will open the edit item dialogue window to allow editing of the user or item.  
@@ -26,7 +33,7 @@ The Found item portal is a landing page for the QR code associated with that ite
 
 Lost and Found - Homepage and Account Page
 
-![alt text](https://media.giphy.com/media/l0WgtXXElivKdJBCFt/giphy.gif)
+<div align="center">![alt text](https://media.giphy.com/media/l0WgtXXElivKdJBCFt/giphy.gif)</div>
 
 Lost and Found - View and Edit Item
 
@@ -57,7 +64,6 @@ Text Message Received
 <img src="https://i.imgur.com/AeMMgco.jpg" width="281" height="409">
 
 <img src="https://i.imgur.com/0ZKkdGK.jpg" width="281" height="409">
-
 
 
 ## Lost and Found - Run Instructions 
