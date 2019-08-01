@@ -18,11 +18,7 @@ The platform provides a direct line of communication to between two unrelated pe
 
 ## Lost and Found - Video 
 
-
-<div align="center">
-    [![youtube video](https://i.imgur.com/0uu6fg4.jpg)](https://vimeo.com/351468041)
-</div>
-
+[![Vimeo](https://i.imgur.com/0uu6fg4.jpg)](https://vimeo.com/351468041)
 
 
 ## Lost and Found - Build: Frontend 
@@ -35,7 +31,7 @@ The Found item portal is a landing page for the QR code associated with that ite
 
 Lost and Found - Homepage and Account Page
 
-<div align="center">![alt text](https://media.giphy.com/media/l0WgtXXElivKdJBCFt/giphy.gif)</div>
+[alt text](https://media.giphy.com/media/l0WgtXXElivKdJBCFt/giphy.gif)
 
 Lost and Found - View and Edit Item
 
