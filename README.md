@@ -18,7 +18,7 @@ The platform provides a direct line of communication to between two unrelated pe
 
 ## Lost and Found - Video 
 
-[![Vimeo](https://i.imgur.com/0uu6fg4.jpg)](https://vimeo.com/351468041)
+[![Vimeo](https://i.imgur.com/9zmFcX5.png)](https://vimeo.com/351468041)
 
 
 ## Lost and Found - Build: Frontend 
