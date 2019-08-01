@@ -20,7 +20,7 @@ The platform provides a direct line of communication to between two unrelated pe
 
 
 <div align="center">
-  [![Vimeo](https://i.imgur.com/0uu6fg4.jpg)](https://vimeo.com/351468041]
+  [![Vimeo](https://i.imgur.com/0uu6fg4.jpg)](https://vimeo.com/351468041)
 </div>
 
 
