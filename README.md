@@ -31,7 +31,7 @@ The Found item portal is a landing page for the QR code associated with that ite
 
 Lost and Found - Homepage and Account Page
 
-[alt text](https://media.giphy.com/media/l0WgtXXElivKdJBCFt/giphy.gif)
+![alt text](https://media.giphy.com/media/l0WgtXXElivKdJBCFt/giphy.gif)
 
 Lost and Found - View and Edit Item
 
