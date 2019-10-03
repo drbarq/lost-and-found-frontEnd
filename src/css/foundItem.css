@@ -22,7 +22,7 @@
 }
 
 .foundItem-thanksContainer {
-    border-bottom: 1px solid #BAC267;
+    /* border-bottom: 1px solid #BAC267; */
     width: 100%;
     display: flex;
     padding: 0.2rem 0.2rem;

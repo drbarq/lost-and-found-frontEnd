@@ -74,7 +74,7 @@ export default class FoundItemPortal extends Component {
                 { this.state.isShowing ? <div onClick={this.closeModalHandler} className="back-drop"></div> : null }
                 <div className="foundItem-foundItemInfoContainer">
                     <div className="foundItem-thanksContainer">
-                        <p>i found an item portal</p>
+                        {/* <p>i found an item portal</p> */}
                     </div>
                     <div className="foundItem-foundItemContainerRowOne">
                         <div className="foundItem-viewNameandMessage">
