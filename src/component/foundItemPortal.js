@@ -74,7 +74,7 @@ export default class FoundItemPortal extends Component {
                 { this.state.isShowing ? <div onClick={this.closeModalHandler} className="back-drop"></div> : null }
                 <div className="foundItem-foundItemInfoContainer">
                     <div className="foundItem-thanksContainer">
-                        <h1>Lost-Found is a Communication Platform for Lost Items</h1>
+                        <h1>Lost-Found connects lost items with their owners</h1>
                     </div>
                 </div>
                 <div className="foundItem-foundItemInfoContainer">
