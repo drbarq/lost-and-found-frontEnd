@@ -106,7 +106,7 @@ export default class FoundItemPortal extends Component {
                 </div> */}
                 <div className="foundItem-foundItemInfoContainer">
                     <div className="foundItem-foundItemContainerRowTwo">
-                            <h3>Use the form to send a message to the owner</h3>
+                            <label>send a message to the owner</label>
                             <form className="foundItem-foundItemFindeeMessageForm" onSubmit={(event) => this.handleSubmit(event)}>
                                 <textarea className="findeeMessageBoxName"
                                             name="findeeName"

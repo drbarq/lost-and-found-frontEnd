@@ -132,6 +132,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     background-color: #bfd7ee;
+    margin-top: 1em;
 }
 
 .foundItem-foundItemFindeeMessageForm input {
