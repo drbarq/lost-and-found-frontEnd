@@ -92,18 +92,18 @@ export default class FoundItemPortal extends Component {
                     <div className="foundItem-foundItemContainerRowOne">
                         <div className="foundItem-viewNameandMessage">
                             <div className="foundItem-itemMessage">
-                                <label htmlFor="foundItem-itemMessageState">message from owner</label>
-                                <h5 className="foundItem-itemMessageState">{this.state.message}</h5>
+                                <label htmlFor="foundItem-itemMessageState">message from item owner:</label>
+                                <h3 className="foundItem-itemMessageState">{this.state.message}</h3>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="foundItem-foundItemInfoContainer">
+                {/* <div className="foundItem-foundItemInfoContainer">
                     <div className="foundItem-thanksContainer">
                         <h1>Located under the owners messages is a form to connect with the owner. </h1>
                     </div>
-                </div>
+                </div> */}
                 <div className="foundItem-foundItemInfoContainer">
                     <div className="foundItem-foundItemContainerRowTwo">
                             <h3>Use the form to send a message to the owner</h3>

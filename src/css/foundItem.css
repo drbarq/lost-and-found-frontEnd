@@ -12,9 +12,9 @@
 }
 
 .foundItem-foundItemInfoContainer label {
-    font-size: 12px;
-    color: #6281aa;
-    border-bottom: 1px solid #BAC267;
+    /* font-size: 12px; */
+    color: #a52d22;
+    border-bottom: 1px solid #fefffe;
     background-color: #bfd7ee;
 }
 
@@ -87,11 +87,11 @@
     background-color: #bfd7ee;
 } 
 
-h5 {
+h3 {
     margin-top: .5em;
     margin-bottom: .5em;
     background-color: #bfd7ee;
-    color: #6281aa;
+    color: #373f51;
 }
 
 .findeeMessageBox {
