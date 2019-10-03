@@ -14,7 +14,8 @@
     flex-wrap: column;
     justify-content: space-between;
     align-items: flex-end;
-    background-color: #FAF2CC; 
+    /* background-color: #FAF2CC;  */
+    /* background-color: fefffe;  */
     border-radius: 25px 25px 0px 0px;
 }
 
@@ -51,23 +52,25 @@
 .logoOne img {
     max-height: 100px;
     max-width: 100%;
-    background-color: #FAF2CC; 
+    /* background-color: #FAF2CC;  */
+    background-color: #fefffe; 
 }
 
 .logoOne {
-    background-color: #FAF2CC; 
+    /* background-color: #FAF2CC;  */
+    background-color: #fefffe; 
     align-self: flex-start;
     margin-top: 2em;
     margin-left: 2.5em;
 }
 
 .app {
-    border: 1px solid #CC4B3E;
+    /* border: 1px solid #CC4B3E; */
     border-radius: 25px;
     margin: 0 auto;
     max-height:700px;
     max-width:700px;
-    margin-top: 3rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,24 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap');
 
 .foundItem-foundItemInfoContainer {
-    border: 1px solid #CC4B3E;
+    /* border: 1px solid #CC4B3E; */
     width: 85%;
     display: flex;
     flex-direction: column;
     margin-top: 2em;
     padding: 0.2rem 0.2rem;
     border-radius: 25px;
+    background-color: #bfd7ee;
 }
 
 .foundItem-foundItemInfoContainer label {
     font-size: 12px;
-    color: #FAF2CC;
+    color: #6281aa;
     border-bottom: 1px solid #BAC267;
+    background-color: #bfd7ee;
 }
+
 
 .foundItem-foundItemInfoContainer p {
     font-size: 12px;
-    color: #FAF2CC;
+    /* color: #FAF2CC; */
+    color: #a52d22;
+    background-color: #bfd7ee;
+}
+
+.foundItem-itemMessage {
+    background-color: #bfd7ee;
 }
 
 .foundItem-thanksContainer {
@@ -31,6 +40,7 @@
     justify-content: space-between; 
     margin-top: 1em;
     border-radius: 25px 25px 0px 0px;
+    background-color: #bfd7ee;
 }
 
 .foundItem-foundItemTitleContainer {
@@ -52,6 +62,7 @@
     padding: 0.2rem 0.2rem;
     width: 100%;
     margin-top: 1em;
+    background-color: #bfd7ee;
 }
 
 .foundItem-viewNameandMessage {
@@ -64,10 +75,13 @@
 .foundItem-itemNameState {
     display: flex;
     flex-direction: column;
+    background-color: #bfd7ee;
 } 
 
 h5 {
     margin-top: .5em;
+    background-color: #bfd7ee;
+    color: #6281aa;
 }
 
 .findeeMessageBox {
@@ -92,6 +106,7 @@ h5 {
     padding: 0.2rem 0.2rem;
     margin-top: 1em;
     margin-bottom: 1em;
+    background-color: #bfd7ee;
 }
 
 .foundItem-foundItemContainerRowTwo h3 {
@@ -99,12 +114,14 @@ h5 {
     border-bottom: 1px solid #BAC267;
     margin-bottom: 1em;
     margin-top: 1em;
+    background-color: #bfd7ee;
 }
 
 .foundItem-foundItemFindeeMessageForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #bfd7ee;
 }
 
 .foundItem-foundItemFindeeMessageForm input {
