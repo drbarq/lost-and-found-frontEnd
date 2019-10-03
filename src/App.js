@@ -14,7 +14,8 @@ import EditUser from './component/editUser'
 import ViewUser from './component/viewUser';
 import ViewItem from './component/viewItem'
 import FoundItemPortal from './component/foundItemPortal';
-import communicationLogo from './images/communicationLogo.png'
+import commsLogoTagLine from './images/commsLogoTagLine.png'
+import helpingConnectLogo from './images/helpingConnectLogo.png'
 
 library.add(fab, fas)
 
@@ -62,7 +63,7 @@ export default class App extends Component {
           <div className="navBarContainer">
             <div className="logoOne">
                 {/* <img src="https://i.imgur.com/ICYVxch.png"></img> */}
-                <img src={communicationLogo}></img>
+                <img src={helpingConnectLogo}></img>
             </div>
             <div className="navBar">
                 <div className="navBarButtons">

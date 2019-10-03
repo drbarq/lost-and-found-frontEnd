@@ -77,16 +77,16 @@ export default class FoundItemPortal extends Component {
                         <h1>Thank you!</h1>
                     </div>
                 </div> */}
-                <div className="foundItem-foundItemInfoContainer">
+                {/* <div className="foundItem-foundItemInfoContainer">
                     <div className="foundItem-thanksContainer">
                         <h1>Lost-Found connects lost items with their owners</h1>
                     </div>
-                </div>
-                <div className="foundItem-foundItemInfoContainer">
+                </div> */}
+                {/* <div className="foundItem-foundItemInfoContainer">
                     <div className="foundItem-thanksContainer">
                         <h3>Below is a message from the item owner</h3>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="foundItem-foundItemInfoContainer">
                     <div className="foundItem-foundItemContainerRowOne">
