@@ -26,8 +26,8 @@
     background-color: #bfd7ee;
 }
 
-.foundItem-foundItemInfoContainer h1 {
-    font-size: 12px;
+.foundItem-foundItemInfoContainer h1, h3 {
+    /* font-size: 12px; */
     /* color: #FAF2CC; */
     color: #a52d22;
     background-color: #bfd7ee;
@@ -46,8 +46,9 @@
     align-items: flex-end;
     justify-content: space-between; 
     margin-top: 1em;
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 25px 25px 25px 25px;
     background-color: #bfd7ee;
+    text-align: center;
 }
 
 .foundItem-foundItemTitleContainer {
@@ -87,6 +88,7 @@
 
 h5 {
     margin-top: .5em;
+    margin-bottom: .5em;
     background-color: #bfd7ee;
     color: #6281aa;
 }

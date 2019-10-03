@@ -72,6 +72,11 @@ export default class FoundItemPortal extends Component {
         return (
             <React.Fragment>
                 { this.state.isShowing ? <div onClick={this.closeModalHandler} className="back-drop"></div> : null }
+                {/* <div className="foundItem-foundItemInfoContainer">
+                    <div className="foundItem-thanksContainer">
+                        <h1>Thank you!</h1>
+                    </div>
+                </div> */}
                 <div className="foundItem-foundItemInfoContainer">
                     <div className="foundItem-thanksContainer">
                         <h1>Lost-Found connects lost items with their owners</h1>
@@ -79,64 +84,62 @@ export default class FoundItemPortal extends Component {
                 </div>
                 <div className="foundItem-foundItemInfoContainer">
                     <div className="foundItem-thanksContainer">
-                        <h1>Below you will find a message from the item owner</h1>
+                        <h3>Below is a message from the item owner</h3>
                     </div>
                 </div>
-                <div className="foundItem-foundItemInfoContainer">
-                    <div className="foundItem-thanksContainer">
-                        <h1>Located under the owners messages is a form to connect with the owner. </h1>
-                    </div>
-                </div>
-                <div className="foundItem-foundItemInfoContainer">
 
+                <div className="foundItem-foundItemInfoContainer">
                     <div className="foundItem-foundItemContainerRowOne">
                         <div className="foundItem-viewNameandMessage">
-                            {/* <div className="foundItem-itemName">
-                                <label htmlFor="foundItem-itemNameState">item name</label>
-                                <h5 className="foundItem-itemNameState">{this.state.item_name}</h5>
-                            </div> */}
                             <div className="foundItem-itemMessage">
                                 <label htmlFor="foundItem-itemMessageState">message from owner</label>
                                 <h5 className="foundItem-itemMessageState">{this.state.message}</h5>
                             </div>
                         </div>
                     </div>
-                    <div className="foundItem-foundItemContainerRowTwo">
-                        <h3>Use the form to send a message to the owner</h3>
-                        <form className="foundItem-foundItemFindeeMessageForm" onSubmit={(event) => this.handleSubmit(event)}>
+                </div>
 
-                            <textarea className="findeeMessageBoxName"
-                                        name="findeeName"
-                                        required
-                                        placeholder="enter your name"
-                                        autoFocus = {true}
-                                        rows = "1"
-                                        maxLength = "15"
-                                        cols = "15"
-                                        onChange={(event) => this.handleTextMessage(event)}
-                                        ></textarea>
-                            <textarea className="findeeMessageBoxNumber"
-                                        name="findeePhoneNumber"
-                                        required
-                                        placeholder="enter your phone number"
-                                        rows = "1"
-                                        maxLength = "10"
-                                        cols = "15"
-                                        onChange={(event) => this.handleTextMessage(event)}
-                                        ></textarea>
-                            <textarea className="findeeMessageBox"
-                                        name="findeeMessage"
-                                        required
-                                        placeholder="enter message to owner"
-                                        rows = "3"
-                                        maxLength = "60"
-                                        cols = "25"
-                                        onChange={(event) => this.handleTextMessage(event)}
-                                        ></textarea>
-                            <input type="submit" value="send text message"/>
-                        </form>
+                <div className="foundItem-foundItemInfoContainer">
+                    <div className="foundItem-thanksContainer">
+                        <h1>Located under the owners messages is a form to connect with the owner. </h1>
                     </div>
                 </div>
+                <div className="foundItem-foundItemInfoContainer">
+                    <div className="foundItem-foundItemContainerRowTwo">
+                            <h3>Use the form to send a message to the owner</h3>
+                            <form className="foundItem-foundItemFindeeMessageForm" onSubmit={(event) => this.handleSubmit(event)}>
+                                <textarea className="findeeMessageBoxName"
+                                            name="findeeName"
+                                            required
+                                            placeholder="enter your name"
+                                            autoFocus = {true}
+                                            rows = "1"
+                                            maxLength = "15"
+                                            cols = "15"
+                                            onChange={(event) => this.handleTextMessage(event)}
+                                            ></textarea>
+                                <textarea className="findeeMessageBoxNumber"
+                                            name="findeePhoneNumber"
+                                            required
+                                            placeholder="enter your phone number"
+                                            rows = "1"
+                                            maxLength = "10"
+                                            cols = "15"
+                                            onChange={(event) => this.handleTextMessage(event)}
+                                            ></textarea>
+                                <textarea className="findeeMessageBox"
+                                            name="findeeMessage"
+                                            required
+                                            placeholder="enter message to owner"
+                                            rows = "3"
+                                            maxLength = "60"
+                                            cols = "25"
+                                            onChange={(event) => this.handleTextMessage(event)}
+                                            ></textarea>
+                                <input type="submit" value="send text message"/>
+                            </form>
+                        </div>
+                    </div>
                 <Modal
                     className="modal"
                     show={this.state.isShowing}
