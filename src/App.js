@@ -8,11 +8,11 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import './App.css';
 
 import HomePage from './component/homePage'
-import NewItem from './component/newItem'
-import EditItem from './component/editItem'
-import EditUser from './component/editUser'
-import ViewUser from './component/viewUser';
-import ViewItem from './component/viewItem'
+// import NewItem from './component/newItem'
+// import EditItem from './component/editItem'
+// import EditUser from './component/editUser'
+// import ViewUser from './component/viewUser';
+// import ViewItem from './component/viewItem'
 import FoundItemPortal from './component/foundItemPortal';
 import commsLogoTagLine from './images/commsLogoTagLine.png'
 import helpingConnectLogo from './images/helpingConnectLogo.png'
@@ -77,7 +77,7 @@ export default class App extends Component {
             exact path="/"
             render={ () => <HomePage userInfo={this.state.userInfo} items={this.state.items}/>} 
             />
-          <Route 
+          {/* <Route 
             path="/editUser/"
             render ={ () => <EditUser userInfo={this.state.userInfo} />}
             />
@@ -97,7 +97,7 @@ export default class App extends Component {
           <Route 
             path="/editItem/"
             render={ () => <EditItem />}
-            />
+            /> */}
           <Route 
             path="/foundIt/:itemID"
             render={ (props) => <FoundItemPortal  foundItemNum={props.match.params.itemID} />}

@@ -7,7 +7,7 @@
     flex-direction: column;
     margin-top: 1em;
     padding: 0.2rem 0.2rem;
-    border-radius: 25px;
+    border-radius: 15px;
     background-color: #bfd7ee;
 }
 
@@ -48,7 +48,7 @@ h4 {
     background-color: #dfebf6;
     color: #373f51;
     padding: 1rem;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 .foundItem-itemMessage {
@@ -64,7 +64,7 @@ h4 {
     align-items: flex-end;
     justify-content: space-between; 
     margin-top: 1em;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 15px;
     background-color: #bfd7ee;
     text-align: center;
 }
@@ -91,7 +91,7 @@ h4 {
     width: 100%;
     margin-top: 1em;
     background-color: #bfd7ee;
-    border-radius: 25px
+    border-radius: 15px
 }
 
 .foundItem-viewNameandMessage {
@@ -144,13 +144,25 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #bfd7ee;
+    background-color: #dfebf6;
     margin-top: 1em;
+    border-radius: 15px;
+}
+
+.foundItem-foundItemFindeeMessageForm textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    /* background-color: #dfebf6; */
+    /* margin-top: 1em; */
+    /* border-radius: 5px; */
+    width: 85%;
 }
 
 .foundItem-foundItemFindeeMessageForm input {
-    background: #FAF2CC;
-    color: #CC4B3E;
+    background: #a52d22;
+    color: #fff;
     align-self: center;
 }
 
