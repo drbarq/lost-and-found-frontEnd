@@ -152,7 +152,7 @@ export default class FoundItemPortal extends Component {
                                             cols = "25"
                                             onChange={(event) => this.handleTextMessage(event)}
                                             ></textarea>
-                                {/* <input type="submit" value="send text message"/> */}
+                                <input type="submit" value="send text message"/>
                                 {/* <button title="Press me"/> */}
                             </form>
                         </div>
@@ -161,7 +161,11 @@ export default class FoundItemPortal extends Component {
                     className="modal"
                     show={this.state.isShowing}
                     close={this.closeModalHandler}>
-                        Thank you! A text message has been sent to the owner!
+                        Thank you for your help!<br/><br/>
+                        A text message has been sent to the owner!<br/><br/>
+                        What's next?  <br/><br/>
+                        The owner will reach out and arrange the return.<br/><br/>
+                        Need to leave? Dont worry!  Just tell the owner where you left the item.
                 </Modal>
             </React.Fragment>
         )

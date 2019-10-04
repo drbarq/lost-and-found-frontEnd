@@ -6,7 +6,7 @@
 }
 
 .modal-header {
-    background: #FAF2CC;
+    background: #373f51;
     height: 50px;
     line-height: 40px;
     padding: 5px 20px;
@@ -15,8 +15,8 @@
 }
 
 .modal-header h4 {
-    color: #CC4B3E;
-    background: #FAF2CC;
+    color: #fff;
+    background-color: inherit;
     float: left;
     margin: 0;
     padding: 0;
@@ -30,17 +30,17 @@
 }
 
 .modal-body p {
-    color: #BAC267
+    color: #373f51
 }
 
 .close-modal-btn {
-    background-color: #FAF2CC;
+    background-color: inherit;
 }
 
 .close-modal-btn i {
-    padding: 0.2rem 1rem;
-    background-color: #FAF2CC;
-    color: #CC4B3E; 
+    /* padding: 0.2rem 1rem; */
+    background-color: #fff;
+    color: #a52d22; 
     cursor: pointer;
 }
 
