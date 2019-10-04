@@ -19,6 +19,7 @@ label {
     border-bottom: 1px solid #fefffe;
     background-color: #bfd7ee;
     align-self: flex-start;
+    font-weight: lighter;
 }
 
 
@@ -49,7 +50,8 @@ h4 {
     padding: 1em;
     /* border-radius: 15px; */
     border-radius: 	0.938em;
-    box-shadow: 0px 0px 5px gray
+    box-shadow: 0px 0px 5px gray;
+    font-weight: normal;
 }
 
 .foundItem-itemMessage {
@@ -174,7 +176,7 @@ h4 {
     resize: none;
     margin-bottom: .5em;
     margin-top: .5em;
-    box-shadow: 0px 3px 5px gray
+    box-shadow: 0px 0px 5px gray
 }
 
 
