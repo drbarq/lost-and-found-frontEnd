@@ -11,14 +11,7 @@
     /* border-radius: 15px; */
     border-radius: 	0.938em;
     background-color: #bfd7ee;
-}
-
-.foundItem-foundItemInfoContainer label {
-    /* font-size: 12px; */
-    /* color: #a52d22; */
-    /* border-bottom: 1px solid #fefffe; */
-    /* background-color: #bfd7ee; */
-    /* align-self: flex-start; */
+    box-shadow: 0px 0px 5px gray
 }
 
 label {
@@ -56,6 +49,7 @@ h4 {
     padding: 1em;
     /* border-radius: 15px; */
     border-radius: 	0.938em;
+    box-shadow: 0px 0px 5px gray
 }
 
 .foundItem-itemMessage {
@@ -160,6 +154,7 @@ h4 {
     margin-top: 1em;
     /* border-radius: 15px; */
     border-radius: 	0.938em;
+    box-shadow: 0px 0px 5px gray
 }
 
 .foundItem-foundItemFindeeMessageForm textarea, input {
@@ -179,6 +174,7 @@ h4 {
     resize: none;
     margin-bottom: .5em;
     margin-top: .5em;
+    box-shadow: 0px 3px 5px gray
 }
 
 
