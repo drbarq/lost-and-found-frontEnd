@@ -72,6 +72,7 @@ export default class FoundItemPortal extends Component {
         return (
             <React.Fragment>
                 { this.state.isShowing ? <div onClick={this.closeModalHandler} className="back-drop"></div> : null }
+
                 {/* <div className="foundItem-foundItemInfoContainer">
                     <div className="foundItem-thanksContainer">
                         <h1>Thank you!</h1>
@@ -90,11 +91,13 @@ export default class FoundItemPortal extends Component {
 
                 <div className="foundItem-foundItemInfoContainer">
                     <div className="foundItem-foundItemContainerRowOne">
+                    <label>message from item owner:</label>
                         <div className="foundItem-viewNameandMessage">
-                            <div className="foundItem-itemMessage">
-                                <label htmlFor="foundItem-itemMessageState">message from item owner:</label>
-                                <h3 className="foundItem-itemMessageState">{this.state.message}</h3>
-                            </div>
+                            {/* <div className="foundItem-itemMessage"> */}
+                                {/* <label htmlFor="foundItem-itemMessageState">message from item owner:</label> */}
+                               
+                                <h4 className="foundItem-itemMessageState">{this.state.message}</h4>
+                            {/* </div> */}
                         </div>
                     </div>
                 </div>
@@ -106,7 +109,7 @@ export default class FoundItemPortal extends Component {
                 </div> */}
                 <div className="foundItem-foundItemInfoContainer">
                     <div className="foundItem-foundItemContainerRowTwo">
-                            <label>send a message to the owner</label>
+                            <label>send a message to the owner:</label>
                             <form className="foundItem-foundItemFindeeMessageForm" onSubmit={(event) => this.handleSubmit(event)}>
                                 <textarea className="findeeMessageBoxName"
                                             name="findeeName"
