@@ -161,11 +161,11 @@ export default class FoundItemPortal extends Component {
                     className="modal"
                     show={this.state.isShowing}
                     close={this.closeModalHandler}>
-                        Thank you for your help!<br/><br/>
+                        Thank you for your help!<br/>
                         A text message has been sent to the owner!<br/><br/>
                         What's next?  <br/><br/>
                         The owner will reach out and arrange the return.<br/><br/>
-                        Need to leave? Dont worry!  Just tell the owner where you left the item.
+                        Need to leave? Dont worry!  Just tell the owner where you left the item or where you saw it last.
                 </Modal>
             </React.Fragment>
         )
