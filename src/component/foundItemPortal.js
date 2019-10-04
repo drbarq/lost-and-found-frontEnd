@@ -101,7 +101,6 @@ export default class FoundItemPortal extends Component {
                                             name="findeePhoneNumber"
                                             pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
                                             placeholder="format: 1234567890"
-                                            // autocomplete="tel-national"
                                             required
                                             maxLength = "10"
                                             onChange={(event) => this.handleTextMessage(event)}

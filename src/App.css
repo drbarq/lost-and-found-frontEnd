@@ -51,8 +51,8 @@
 }
 
 .logoOne img {
-    max-height: 100px;
-    max-width: 100%;
+    /* max-height: 100px; */
+    width: 100%;
     /* background-color: #FAF2CC;  */
     background-color: #fefffe; 
 }
@@ -61,8 +61,8 @@
     /* background-color: #FAF2CC;  */
     background-color: #fefffe; 
     align-self: flex-start;
-    margin-top: 2em;
-    margin-left: 2.5em;
+    margin-top: 1.5em;
+    margin-left: 1em;
     /* margin-bottom: 1em; */
 }
 
