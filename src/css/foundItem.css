@@ -99,6 +99,7 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: #bfd7ee;
 }
 
 .foundItem-itemNameState {
