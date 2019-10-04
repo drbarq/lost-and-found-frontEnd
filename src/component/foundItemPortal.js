@@ -109,7 +109,7 @@ export default class FoundItemPortal extends Component {
                                 <textarea className="findeeMessageBox"
                                             name="findeeMessage"
                                             required
-                                            placeholder="include next steps and how best to return the item OR where you left it"
+                                            placeholder="include next steps : your easiest way to return it OR where you left it"
                                             rows = "3"
                                             maxLength = "60"
                                             cols = "25"
