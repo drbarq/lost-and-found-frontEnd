@@ -111,7 +111,7 @@ export default class FoundItemPortal extends Component {
                     <div className="foundItem-foundItemContainerRowTwo">
                             <label>send a message to the owner:</label>
                             <form className="foundItem-foundItemFindeeMessageForm" onSubmit={(event) => this.handleSubmit(event)}>
-                                <p for="findeeName">enter your name:</p>
+                                <p htmlFor="findeeName">enter your name:</p>
                                 <textarea className="findeeMessageBoxName"
                                             name="findeeName"
                                             required
@@ -122,7 +122,7 @@ export default class FoundItemPortal extends Component {
                                             cols = "15"
                                             onChange={(event) => this.handleTextMessage(event)}
                                             ></textarea>
-                                <p for="findeePhoneNumber">enter your phone number:</p>
+                                <p htmlFor="findeePhoneNumber">enter your phone number:</p>
                                 {/* <textarea className="findeeMessageBoxNumber"
                                             name="findeePhoneNumber"
                                             required
@@ -141,7 +141,7 @@ export default class FoundItemPortal extends Component {
                                             required
                                             onChange={(event) => this.handleTextMessage(event)}
                                             ></input>
-                                <p for="findeeMessage">enter message to owner:</p>
+                                <p htmlFor="findeeMessage">enter message to owner:</p>
                                 <textarea className="findeeMessageBox"
                                             name="findeeMessage"
                                             required
