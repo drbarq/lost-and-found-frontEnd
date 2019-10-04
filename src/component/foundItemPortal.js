@@ -99,8 +99,9 @@ export default class FoundItemPortal extends Component {
                                 <input className="findeeMessageBoxNumber"
                                             type="tel" 
                                             name="findeePhoneNumber"
-                                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                                            placeholder="format: 123-456-7890"
+                                            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                                            placeholder="format: 1234567890"
+                                            // autocomplete="tel-national"
                                             required
                                             onChange={(event) => this.handleTextMessage(event)}
                                             ></input>
