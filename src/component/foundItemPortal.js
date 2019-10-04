@@ -103,6 +103,7 @@ export default class FoundItemPortal extends Component {
                                             placeholder="format: 1234567890"
                                             // autocomplete="tel-national"
                                             required
+                                            maxLength = "10"
                                             onChange={(event) => this.handleTextMessage(event)}
                                             ></input>
                                 <p htmlFor="findeeMessage">enter message to owner:</p>
