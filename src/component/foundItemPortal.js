@@ -116,7 +116,7 @@ export default class FoundItemPortal extends Component {
                                             cols = "25"
                                             onChange={(event) => this.handleTextMessage(event)}
                                             ></textarea>
-                                <input class="button" type="submit" value="send message"/>
+                                <input type="submit" value="send message"/>
                             </form>
                         </div>
                     </div>
