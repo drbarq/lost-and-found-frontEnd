@@ -8,7 +8,7 @@ const modal = (props) => {
             <div className="modal-wrapper"
                 style={{
                     // transform: props.show ? 'translateY(-80vh)' : 'translateY(50vh)',
-                    transform: props.show ? 'translateY(-80vh)' : 'translateY(-20px)',
+                    transform: props.show ? 'translateY(-50vh)' : 'translateY(-20px)',
                     opacity: props.show ? '1' : '0'
                 }}>
                 <div className="modal-header">
