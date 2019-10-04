@@ -34,6 +34,7 @@ label {
     background-color: inherit;
     border-radius: inherit;
     padding-left: .5rem;
+    padding-top: .5rem;
 }
 
 .foundItem-foundItemInfoContainer h1, h3 {
