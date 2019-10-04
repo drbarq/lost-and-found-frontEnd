@@ -111,10 +111,11 @@ export default class FoundItemPortal extends Component {
                     <div className="foundItem-foundItemContainerRowTwo">
                             <label>send a message to the owner:</label>
                             <form className="foundItem-foundItemFindeeMessageForm" onSubmit={(event) => this.handleSubmit(event)}>
+                                <p for="findeeName">enter your name</p>
                                 <textarea className="findeeMessageBoxName"
                                             name="findeeName"
                                             required
-                                            placeholder="enter your name"
+                                            placeholder="name"
                                             autoFocus = {true}
                                             rows = "1"
                                             maxLength = "15"
