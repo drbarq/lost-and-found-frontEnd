@@ -111,7 +111,7 @@ export default class FoundItemPortal extends Component {
                     <div className="foundItem-foundItemContainerRowTwo">
                             <label>send a message to the owner:</label>
                             <form className="foundItem-foundItemFindeeMessageForm" onSubmit={(event) => this.handleSubmit(event)}>
-                                <p for="findeeName">enter your name</p>
+                                <p for="findeeName">enter your name:</p>
                                 <textarea className="findeeMessageBoxName"
                                             name="findeeName"
                                             required
@@ -122,7 +122,8 @@ export default class FoundItemPortal extends Component {
                                             cols = "15"
                                             onChange={(event) => this.handleTextMessage(event)}
                                             ></textarea>
-                                <textarea className="findeeMessageBoxNumber"
+                                <p for="findeePhoneNumber">enter your phone number:</p>
+                                {/* <textarea className="findeeMessageBoxNumber"
                                             name="findeePhoneNumber"
                                             required
                                             placeholder="enter your phone number"
@@ -130,17 +131,28 @@ export default class FoundItemPortal extends Component {
                                             maxLength = "10"
                                             cols = "15"
                                             onChange={(event) => this.handleTextMessage(event)}
-                                            ></textarea>
+                                            ></textarea> */}
+                                <input className="findeeMessageBoxNumber"
+                                            type="tel" 
+                                            // id="phone" 
+                                            name="findeePhoneNumber"
+                                            required
+                                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                            placeholder="format: 123-456-7890"
+                                            required
+                                            onChange={(event) => this.handleTextMessage(event)}
+                                            ></input>
+                                <p for="findeeMessage">enter message to owner:</p>
                                 <textarea className="findeeMessageBox"
                                             name="findeeMessage"
                                             required
-                                            placeholder="enter message to owner"
+                                            placeholder="include next steps and how best to return the item OR where you left it"
                                             rows = "3"
                                             maxLength = "60"
                                             cols = "25"
                                             onChange={(event) => this.handleTextMessage(event)}
                                             ></textarea>
-                                <input type="submit" value="send text message"/>
+                                {/* <input type="submit" value="send text message"/> */}
                                 {/* <button title="Press me"/> */}
                             </form>
                         </div>

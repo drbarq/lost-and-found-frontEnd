@@ -28,7 +28,7 @@ label {
 
 
 .foundItem-foundItemInfoContainer p {
-    font-size: 12px;
+    font-size: 14px;
     /* color: #FAF2CC; */
     color: #a52d22;
     background-color: inherit;
@@ -117,10 +117,10 @@ h4 {
     resize: none;
 }
 .findeeMessageBoxName, .findeeMessageBoxNumber {
-    margin-bottom: .5em;
-    margin-top: .5em;
-    color: #a52d22;
-    resize: none;
+    /* margin-bottom: .5em; */
+    /* margin-top: .5em; */
+    /* color: #a52d22; */
+    
 }
 
 .foundItem-foundItemContainerRowTwo {
@@ -152,7 +152,7 @@ h4 {
     border-radius: 15px;
 }
 
-.foundItem-foundItemFindeeMessageForm textarea {
+.foundItem-foundItemFindeeMessageForm textarea, input {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,12 +161,22 @@ h4 {
     /* margin-top: 1em; */
     /* border-radius: 5px; */
     width: 85%;
+    font-size: 12pt;
+    color: #373f51;
+    resize: none;
+    margin-bottom: .5em;
+    margin-top: .5em;
+}
+
+.findeeMessageBox {
+    margin-bottom: 1rem;
 }
 
 .foundItem-foundItemFindeeMessageForm input {
-    background: #a52d22;
-    color: #fff;
-    align-self: center;
+    /* background: #a52d22; */
+
+    /* color: #fff; */
+    /* align-self: center; */
 }
 
 
