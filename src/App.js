@@ -65,12 +65,12 @@ export default class App extends Component {
                 {/* <img src="https://i.imgur.com/ICYVxch.png"></img> */}
                 <img src={helpingConnectLogo}></img>
             </div>
-            <div className="navBar">
-                <div className="navBarButtons">
-                    {/* <Link className="navbar-home-button" to="/"><i className="fa fa-home fa-2x"></i></Link> */}
-                    {/* <Link className="navbar-user-button" to="/accountInformation/"><i className="fa fa-user fa-2x"></i></Link> */}
+            {/* <div className="navBar"> */}
+                {/* <div className="navBarButtons">
+                    <Link className="navbar-home-button" to="/"><i className="fa fa-home fa-2x"></i></Link>
+                    <Link className="navbar-user-button" to="/accountInformation/"><i className="fa fa-user fa-2x"></i></Link>
                 </div>
-            </div>
+            </div> */}
           </div>
         <Switch>
           <Route 
