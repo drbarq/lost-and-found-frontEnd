@@ -72,41 +72,14 @@ export default class FoundItemPortal extends Component {
         return (
             <React.Fragment>
                 { this.state.isShowing ? <div onClick={this.closeModalHandler} className="back-drop"></div> : null }
-
-                {/* <div className="foundItem-foundItemInfoContainer">
-                    <div className="foundItem-thanksContainer">
-                        <h1>Thank you!</h1>
-                    </div>
-                </div> */}
-                {/* <div className="foundItem-foundItemInfoContainer">
-                    <div className="foundItem-thanksContainer">
-                        <h1>Lost-Found connects lost items with their owners</h1>
-                    </div>
-                </div> */}
-                {/* <div className="foundItem-foundItemInfoContainer">
-                    <div className="foundItem-thanksContainer">
-                        <h3>Below is a message from the item owner</h3>
-                    </div>
-                </div> */}
-
                 <div className="foundItem-foundItemInfoContainer">
                     <div className="foundItem-foundItemContainerRowOne">
                     <label>message from item owner:</label>
                         <div className="foundItem-viewNameandMessage">
-                            {/* <div className="foundItem-itemMessage"> */}
-                                {/* <label htmlFor="foundItem-itemMessageState">message from item owner:</label> */}
-                               
                                 <h4 className="foundItem-itemMessageState">{this.state.message}</h4>
-                            {/* </div> */}
                         </div>
                     </div>
                 </div>
-
-                {/* <div className="foundItem-foundItemInfoContainer">
-                    <div className="foundItem-thanksContainer">
-                        <h1>Located under the owners messages is a form to connect with the owner. </h1>
-                    </div>
-                </div> */}
                 <div className="foundItem-foundItemInfoContainer">
                     <div className="foundItem-foundItemContainerRowTwo">
                             <label>send a message to the owner:</label>
@@ -123,18 +96,8 @@ export default class FoundItemPortal extends Component {
                                             onChange={(event) => this.handleTextMessage(event)}
                                             ></textarea>
                                 <p htmlFor="findeePhoneNumber">enter your phone number:</p>
-                                {/* <textarea className="findeeMessageBoxNumber"
-                                            name="findeePhoneNumber"
-                                            required
-                                            placeholder="enter your phone number"
-                                            rows = "1"
-                                            maxLength = "10"
-                                            cols = "15"
-                                            onChange={(event) => this.handleTextMessage(event)}
-                                            ></textarea> */}
                                 <input className="findeeMessageBoxNumber"
                                             type="tel" 
-                                            // id="phone" 
                                             name="findeePhoneNumber"
                                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                                             placeholder="format: 123-456-7890"
@@ -152,7 +115,6 @@ export default class FoundItemPortal extends Component {
                                             onChange={(event) => this.handleTextMessage(event)}
                                             ></textarea>
                                 <input type="submit" value="send message"/>
-                                {/* <button title="Press me"/> */}
                             </form>
                         </div>
                     </div>
