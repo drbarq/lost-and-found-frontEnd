@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap');
 
 .foundItem-foundItemInfoContainer {
-    /* border: 1px solid #CC4B3E; */
+    border: 1px solid white;
     width: 85%;
     height: 100%;
     display: flex;
@@ -179,6 +179,55 @@ h4 {
     box-shadow: 0px 0px 5px gray
 }
 
+.button {
+    -webkit-box-shadow: -1px 1px 4px 0px rgba(31, 16, 15, 0.99);
+    -moz-box-shadow: -1px 1px 4px 0px rgba(31, 16, 15, 0.99);
+    box-shadow: -1px 1px 4px 0px rgba(31, 16, 15, 0.99);
+    border: 1px solid #1f100f;
+    background: #dfebf6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#bfd7ee), to(#dfebf6));
+    background: -webkit-linear-gradient(top, #bfd7ee, #dfebf6);
+    background: -moz-linear-gradient(top, #bfd7ee, #dfebf6);
+    background: -ms-linear-gradient(top, #bfd7ee, #dfebf6);
+    background: -o-linear-gradient(top, #bfd7ee, #dfebf6);
+    background-image: -ms-linear-gradient(top, #bfd7ee 0%, #dfebf6 100%);
+    padding: 12px 24px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    text-shadow: #7ea4bd 0 1px 0;
+    color: #373f51;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-family: helvetica, serif;
+    text-decoration: none;
+    vertical-align: middle;
+    }
+ .button:hover {
+    border: 1px solid #0a3c59;
+    text-shadow: #1e4158 0 1px 0;
+    background: #3e779d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#65a9d7), to(#3e779d));
+    background: -webkit-linear-gradient(top, #65a9d7, #3e779d);
+    background: -moz-linear-gradient(top, #65a9d7, #3e779d);
+    background: -ms-linear-gradient(top, #65a9d7, #3e779d);
+    background: -o-linear-gradient(top, #65a9d7, #3e779d);
+    background-image: -ms-linear-gradient(top, #65a9d7 0%, #3e779d 100%);
+    color: #fff;
+    }
+ .button:active {
+    text-shadow: #1e4158 0 1px 0;
+    border: 1px solid #0a3c59;
+    background: #65a9d7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#3e779d));
+    background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+    background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+    background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+    background: -o-linear-gradient(top, #3e779d, #65a9d7);
+    background-image: -ms-linear-gradient(top, #3e779d 0%, #65a9d7 100%);
+    color: #fff;
+    }
 
 
 
