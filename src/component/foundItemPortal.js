@@ -136,7 +136,6 @@ export default class FoundItemPortal extends Component {
                                             type="tel" 
                                             // id="phone" 
                                             name="findeePhoneNumber"
-                                            required
                                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                                             placeholder="format: 123-456-7890"
                                             required
@@ -152,7 +151,7 @@ export default class FoundItemPortal extends Component {
                                             cols = "25"
                                             onChange={(event) => this.handleTextMessage(event)}
                                             ></textarea>
-                                <input type="submit" value="send text message"/>
+                                <input type="submit" value="send message"/>
                                 {/* <button title="Press me"/> */}
                             </form>
                         </div>
